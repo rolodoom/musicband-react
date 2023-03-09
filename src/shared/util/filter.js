@@ -48,3 +48,25 @@ export const getSortedItems = (items) => {
   // Return the sorted array
   return sortedItems;
 };
+
+/**
+ * A utility function to randomize the order of an array
+ * @param {array} arr - The array to randomize
+ * @returns {array} - The randomized array
+ */
+export function shuffleItems(arr) {
+  // Create a new array to store the randomized elements
+  const shuffled = [...arr];
+
+  // Loop through the array from the end to the beginning
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    // Generate a random index between 0 and i (inclusive)
+    const j = Math.floor(Math.random() * (i + 1));
+
+    // Swap the element at index i with the element at index j
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+
+  // Return the shuffled array
+  return shuffled;
+}
