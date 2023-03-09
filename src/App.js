@@ -1,12 +1,12 @@
-import Navigation from "./sections/Navigation";
-import Masthead from "./sections/Masthead";
-import Videos from "./sections/Videos";
-import Releases from "./sections/Releases";
-import Bio from "./sections/Bio";
-import Musicians from "./sections/Musicians";
-import Gallery from "./sections/Gallery";
-import Contact from "./sections/Contact";
-import Footer from "./sections/Footer";
+import Navigation from "./places/sections/Navigation";
+import Masthead from "./places/sections/Masthead";
+import Videos from "./places/sections/Videos";
+import Releases from "./places/sections/Releases";
+import Bio from "./places/sections/Bio";
+import Musicians from "./places/sections/Musicians";
+import Gallery from "./places/sections/Gallery";
+import Contact from "./places/sections/Contact";
+import Footer from "./places/sections/Footer";
 
 import "./scss/styles.scss";
 

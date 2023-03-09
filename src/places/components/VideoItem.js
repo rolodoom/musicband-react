@@ -1,6 +1,6 @@
 import React from "react";
 
-import { getYouTubeThumbnailUrl, formatDate } from "../Utils";
+import { getYouTubeThumbnailUrl, formatDate } from "../../shared/util/format";
 
 const VideoItem = ({ video, feature }) => {
   const formattedDate = formatDate(video.date);

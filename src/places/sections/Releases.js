@@ -1,8 +1,8 @@
 import React from "react";
 
-import ReleaseItem from "./ReleaseItem";
+import ReleaseItem from "../components/ReleaseItem";
 
-import { getSortedItems } from "../Utils";
+import { getSortedItems } from "../../shared/util/filter";
 
 function Releases({ releases }) {
   const sortedReleases = getSortedItems([...releases]);

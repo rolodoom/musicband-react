@@ -1,8 +1,11 @@
 import React from "react";
 
-import VideoItem from "./VideoItem";
+import VideoItem from "../components/VideoItem";
 
-import { getLatestItem, getSortedItemsWithoutLatest } from "../Utils";
+import {
+  getLatestItem,
+  getSortedItemsWithoutLatest,
+} from "../../shared/util/filter";
 
 function Videos({ videos }) {
   const sortedVideos = getSortedItemsWithoutLatest([...videos]);

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { formatDate } from "../Utils";
+import { formatDate } from "../../shared/util/format";
 
 const ReleaseItem = ({ release }) => {
   const formattedDate = formatDate(release.date);
