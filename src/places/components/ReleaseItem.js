@@ -6,24 +6,22 @@ const ReleaseItem = ({ release }) => {
   const formattedDate = formatDate(release.date);
 
   return (
-    <div className="col-lg-3 col-sm-6 mb-4">
-      <div className="portfolio-item">
-        <a
-          className="portfolio-link"
-          data-bs-toggle="modal"
-          href="#releaseModal1"
-        >
-          <div className="portfolio-hover">
-            <div className="portfolio-hover-content">
-              <i className="fas fa-plus fa-3x"></i>
-            </div>
+    <div className="portfolio-item">
+      <a
+        className="portfolio-link"
+        data-bs-toggle="modal"
+        href={`#modal_${release.id}`}
+      >
+        <div className="portfolio-hover">
+          <div className="portfolio-hover-content">
+            <i className="fas fa-plus fa-3x"></i>
           </div>
-          <img className="img-fluid" src={release.image} alt="" />
-        </a>
-        <div className="portfolio-caption">
-          <div className="portfolio-caption-heading">{release.title}</div>
-          <div className="portfolio-caption-subheading">{formattedDate}</div>
         </div>
+        <img className="img-fluid" src={release.image} alt="" />
+      </a>
+      <div className="portfolio-caption">
+        <div className="portfolio-caption-heading">{release.title}</div>
+        <div className="portfolio-caption-subheading">{formattedDate}</div>
       </div>
     </div>
   );

@@ -21,7 +21,7 @@ function App() {
         <Videos videos={DUMMY_BANDINFO.videos} />
         <Releases releases={DUMMY_BANDINFO.releases} />
         <Bio />
-        <Musicians />
+        <Musicians musicians={DUMMY_BANDINFO.musicians} />
         <Gallery />
         <Contact />
         <Footer />

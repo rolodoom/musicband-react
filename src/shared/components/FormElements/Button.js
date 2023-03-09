@@ -11,12 +11,20 @@ function Button(props) {
       </a>
     );
   }
+  if (props.dismiss) {
+    return (
+      <button
+        className={`btn ${props.className || "btn-primary"}`}
+        href={props.href}
+        data-bs-dismiss={props.dismiss}
+        type={props.type || "button"}
+      >
+        {props.children}
+      </button>
+    );
+  }
   return (
-    <button
-      className={`btn ${props.className || "btn-primary"}`}
-      data-bs-dismiss="modal"
-      type="button"
-    >
+    <button className={`btn ${props.className || "btn-primary"}`}>
       {props.children}
     </button>
   );

@@ -40,26 +40,100 @@
     {
       "id": "60b9d1e06cb2c22777d12b5f",
       "title": "All things New",
+      "subtitle": "All Lorem ipsum dolor sit amet consectetur.",
       "date": "2010-05-06",
-      "image": "/assets/img/releases/1.jpg"
+      "image": "/assets/img/releases/1.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!",
+      "format": "CD",
+      "label": "Record Label",
+      "streaming": [
+        { "name": "bandcamp", "link": "#!" },
+        { "name": "spotify", "link": "#!" },
+        { "name": "apple", "link": "#!" }
+      ]
     },
     {
       "id": "5f5b43c5f926754e43a9c7a0",
       "title": "Renegade Waves",
+      "subtitle": "Lorem ipsum dolor sit amet consectetur.",
       "date": "2013-06-16",
-      "image": "/assets/img/releases/2.jpg"
+      "image": "/assets/img/releases/2.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!",
+      "format": "CD",
+      "label": "Record Label",
+      "streaming": [
+        { "name": "bandcamp", "link": "#!" },
+        { "name": "spotify", "link": "#!" },
+        { "name": "apple", "link": "#!" }
+      ]
     },
     {
       "id": "5e8475f5ef5ff4560e547a18",
       "title": "Jungle - The Hits",
+      "subtitle": "Lorem ipsum dolor sit amet consectetur.",
       "date": "2015-01-22",
-      "image": "/assets/img/releases/3.jpg"
+      "image": "/assets/img/releases/3.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!",
+      "format": "CD",
+      "label": "Record Label",
+      "streaming": [
+        { "name": "bandcamp", "link": "#!" },
+        { "name": "spotify", "link": "#!" },
+        { "name": "apple", "link": "#!" }
+      ]
     },
     {
       "id": "5dc5f9d5f5c5c561e4b5964a",
       "title": "The Alternative",
+      "subtitle": "Lorem ipsum dolor sit amet consectetur.",
       "date": "2020-05-06",
-      "image": "/assets/img/releases/4.jpg"
+      "image": "/assets/img/releases/4.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!",
+      "format": "CD",
+      "label": "Record Label",
+      "streaming": [
+        { "name": "bandcamp", "link": "#!" },
+        { "name": "spotify", "link": "#!" },
+        { "name": "apple", "link": "#!" }
+      ]
+    }
+  ],
+  "musicians": [
+    {
+      "id": "5a4f8bc4a53a89105d9c3b3a",
+      "name": "Kay Garland",
+      "instrument": "Vocals / Guitar",
+      "image": "/assets/img/musicians/1.jpg",
+      "description": "Sapiente voluptatem delectus nisi fuga vero ratione impedit minus perspiciatis quas vitae nulla, aliquam commodi aspernatur eos esse animi hic blanditiis iusto excepturi tenetur possimus. Saepe id asperiores esse doloremque voluptatem laudantium architecto nesciunt cum! At reprehenderit explicabo ut, adipisci fuga unde! Nihil omnis fugit ratione ut sit et dolores soluta inventore perferendis, natus nostrum dicta aut! Sed maxime doloribus numquam eaque culpa aperiam sequi molestiae molestias facere. Culpa reprehenderit ea, enim inventore libero in dolorum praesentium, expedita pariatur nobis cumque? Aut, libero tenetur!",
+      "social": [
+        { "name": "instagram", "link": "#!" },
+        { "name": "twitter", "link": "#!" },
+        { "name": "facebook", "link": "#!" }
+      ]
+    },
+    {
+      "id": "5b98038447c3f6011a3b8e3d",
+      "name": "Larry Parker",
+      "instrument": "Bass",
+      "image": "/assets/img/musicians/2.jpg",
+      "description": "Sapiente voluptatem delectus nisi fuga vero ratione impedit minus perspiciatis quas vitae nulla, aliquam commodi aspernatur eos esse animi hic blanditiis iusto excepturi tenetur possimus. Saepe id asperiores esse doloremque voluptatem laudantium architecto nesciunt cum! At reprehenderit explicabo ut, adipisci fuga unde! Nihil omnis fugit ratione ut sit et dolores soluta inventore perferendis, natus nostrum dicta aut! Sed maxime doloribus numquam eaque culpa aperiam sequi molestiae molestias facere. Culpa reprehenderit ea, enim inventore libero in dolorum praesentium, expedita pariatur nobis cumque? Aut, libero tenetur!",
+      "social": [
+        { "name": "instagram", "link": "#!" },
+        { "name": "twitter", "link": "#!" },
+        { "name": "facebook", "link": "#!" }
+      ]
+    },
+    {
+      "id": "5d9fb19988e8ec08201b7d22",
+      "name": "Diana Petersen",
+      "instrument": "Drums",
+      "image": "/assets/img/musicians/3.jpg",
+      "description": "Sapiente voluptatem delectus nisi fuga vero ratione impedit minus perspiciatis quas vitae nulla, aliquam commodi aspernatur eos esse animi hic blanditiis iusto excepturi tenetur possimus. Saepe id asperiores esse doloremque voluptatem laudantium architecto nesciunt cum! At reprehenderit explicabo ut, adipisci fuga unde! Nihil omnis fugit ratione ut sit et dolores soluta inventore perferendis, natus nostrum dicta aut! Sed maxime doloribus numquam eaque culpa aperiam sequi molestiae molestias facere. Culpa reprehenderit ea, enim inventore libero in dolorum praesentium, expedita pariatur nobis cumque? Aut, libero tenetur!",
+      "social": [
+        { "name": "instagram", "link": "#!" },
+        { "name": "twitter", "link": "#!" },
+        { "name": "facebook", "link": "#!" }
+      ]
     }
   ]
 }
