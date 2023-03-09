@@ -1,5 +1,7 @@
 import React from "react";
 
+import Button from "../../shared/components/FormElements/Button";
+
 function Masthead(props) {
   const styles = {
     backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('${props.bgImage}')`,
@@ -12,11 +14,10 @@ function Masthead(props) {
         <div className="masthead-heading text-uppercase">
           It's Nice To Meet You
         </div>
-        <a className="btn btn-primary btn-xl text-uppercase" href="#videos">
+        <Button className="btn-primary btn-xl text-uppercase" href="#videos">
+          <i className="fas fa-angle-double-down"></i> Continue{" "}
           <i className="fas fa-angle-double-down"></i>
-          Continue
-          <i className="fas fa-angle-double-down"></i>
-        </a>
+        </Button>
       </div>
     </header>
   );
