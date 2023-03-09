@@ -1,6 +1,12 @@
 import React from "react";
 
-function Music() {
+import ReleaseItem from "./ReleaseItem";
+
+import { getSortedItems } from "../Utils";
+
+function Releases({ releases }) {
+  const sortedReleases = getSortedItems([...releases]);
+
   return (
     <React.Fragment>
       <section
@@ -15,110 +21,9 @@ function Music() {
             </h3>
           </div>
           <div className="row">
-            <div className="col-lg-3 col-sm-6 mb-4">
-              <div className="portfolio-item">
-                <a
-                  className="portfolio-link"
-                  data-bs-toggle="modal"
-                  href="#releaseModal1"
-                >
-                  <div className="portfolio-hover">
-                    <div className="portfolio-hover-content">
-                      <i className="fas fa-plus fa-3x"></i>
-                    </div>
-                  </div>
-                  <img
-                    className="img-fluid"
-                    src="assets/img/releases/1.jpg"
-                    alt=""
-                  />
-                </a>
-                <div className="portfolio-caption">
-                  <div className="portfolio-caption-heading">
-                    All Things New
-                  </div>
-                  <div className="portfolio-caption-subheading">2010</div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-sm-6 mb-4">
-              <div className="portfolio-item">
-                <a
-                  className="portfolio-link"
-                  data-bs-toggle="modal"
-                  href="#releaseModal2"
-                >
-                  <div className="portfolio-hover">
-                    <div className="portfolio-hover-content">
-                      <i className="fas fa-plus fa-3x"></i>
-                    </div>
-                  </div>
-                  <img
-                    className="img-fluid"
-                    src="assets/img/releases/2.jpg"
-                    alt=""
-                  />
-                </a>
-                <div className="portfolio-caption">
-                  <div className="portfolio-caption-heading">
-                    Renegade Waves
-                  </div>
-                  <div className="portfolio-caption-subheading">2013</div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-sm-6 mb-4">
-              <div className="portfolio-item">
-                <a
-                  className="portfolio-link"
-                  data-bs-toggle="modal"
-                  href="#releaseModal3"
-                >
-                  <div className="portfolio-hover">
-                    <div className="portfolio-hover-content">
-                      <i className="fas fa-plus fa-3x"></i>
-                    </div>
-                  </div>
-                  <img
-                    className="img-fluid"
-                    src="assets/img/releases/3.jpg"
-                    alt=""
-                  />
-                </a>
-                <div className="portfolio-caption">
-                  <div className="portfolio-caption-heading">
-                    Jungle - The Hits
-                  </div>
-                  <div className="portfolio-caption-subheading">2015</div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-sm-6 mb-4">
-              <div className="portfolio-item">
-                <a
-                  className="portfolio-link"
-                  data-bs-toggle="modal"
-                  href="#releaseModal4"
-                >
-                  <div className="portfolio-hover">
-                    <div className="portfolio-hover-content">
-                      <i className="fas fa-plus fa-3x"></i>
-                    </div>
-                  </div>
-                  <img
-                    className="img-fluid"
-                    src="assets/img/releases/4.jpg"
-                    alt=""
-                  />
-                </a>
-                <div className="portfolio-caption">
-                  <div className="portfolio-caption-heading">
-                    The Alternative
-                  </div>
-                  <div className="portfolio-caption-subheading">2020</div>
-                </div>
-              </div>
-            </div>
+            {sortedReleases.map((release) => {
+              return <ReleaseItem key={release.id} release={release} />;
+            })}
           </div>
           <div className="row py-1">
             <div className="col-md-12 my-3">
@@ -461,4 +366,4 @@ function Music() {
   );
 }
 
-export default Music;
+export default Releases;

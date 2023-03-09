@@ -1,8 +1,12 @@
 import React from "react";
 
-function Masthead() {
+function Masthead(props) {
+  const styles = {
+    backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('${props.bgImage}')`,
+  };
+
   return (
-    <header className="masthead">
+    <header className="masthead" style={styles}>
       <div className="container">
         <div className="masthead-subheading">Welcome!</div>
         <div className="masthead-heading text-uppercase">

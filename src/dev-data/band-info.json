@@ -1,0 +1,65 @@
+{
+  "name": "MusicBand",
+  "logo": "/assets/img/navbar-logo.svg",
+  "masthead": {
+    "bgImage": "/assets/img/masthead/header-bg.jpg"
+  },
+  "videos": [
+    {
+      "id": "ErvgV4P6Fzc",
+      "title": "Patience",
+      "subtitle": "Guns N' Roses",
+      "date": "2023-10-07"
+    },
+    {
+      "id": "1w7OgIMMRc4",
+      "title": "Sweet Child O'Mine",
+      "subtitle": "Guns N' Roses",
+      "date": "2022-12-25"
+    },
+    {
+      "id": "8SbUC-UaAxE",
+      "title": "November Rain",
+      "subtitle": "Guns N' Roses",
+      "date": "2019-12-25"
+    },
+    {
+      "id": "o1tj2zJ2Wvg",
+      "title": "Welcome To The Jungle",
+      "subtitle": "Guns N' Roses",
+      "date": "2009-12-25"
+    },
+    {
+      "id": "Rbm6GXllBiw",
+      "title": "Paradise City",
+      "subtitle": "Official Music Video",
+      "date": "2018-12-25"
+    }
+  ],
+  "releases": [
+    {
+      "id": "60b9d1e06cb2c22777d12b5f",
+      "title": "All things New",
+      "date": "2010-05-06",
+      "image": "/assets/img/releases/1.jpg"
+    },
+    {
+      "id": "5f5b43c5f926754e43a9c7a0",
+      "title": "Renegade Waves",
+      "date": "2013-06-16",
+      "image": "/assets/img/releases/2.jpg"
+    },
+    {
+      "id": "5e8475f5ef5ff4560e547a18",
+      "title": "Jungle - The Hits",
+      "date": "2015-01-22",
+      "image": "/assets/img/releases/3.jpg"
+    },
+    {
+      "id": "5dc5f9d5f5c5c561e4b5964a",
+      "title": "The Alternative",
+      "date": "2020-05-06",
+      "image": "/assets/img/releases/4.jpg"
+    }
+  ]
+}

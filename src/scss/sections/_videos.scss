@@ -1,0 +1,84 @@
+// Styling for the portfolio section
+.videos {
+  .video-item {
+    // max-width: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+    .video-link {
+      position: relative;
+      display: block;
+      margin: 0 auto;
+      .video-hover {
+        display: flex;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: none;
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
+        transition: all ease-in-out 0.25s;
+        .video-hover-content {
+          font-size: 1.25rem;
+          color: $white;
+          transition: all ease-in-out 0.25s;
+        }
+      }
+      &:hover {
+        .video-hover {
+          opacity: 1;
+          background: fade-out($primary, 0.1);
+          .video-hover-content {
+            color: white;
+          }
+        }
+      }
+    }
+    .video-caption {
+      padding: 1.5rem;
+      text-align: center;
+      // background-color: $white;
+      .video-caption-heading {
+        font-size: 1.5rem;
+        font-family: $headings-font-family;
+        font-weight: $headings-font-weight;
+        margin-bottom: 0;
+      }
+      .video-caption-subheading {
+        // font-style: italic;
+        font-family: $subheadings-font-family;
+      }
+      .video-caption-date {
+        font-size: 1rem;
+        font-style: italic;
+        font-family: $subheadings-font-family;
+      }
+    }
+  }
+  .videos-secondary {
+    .video-item {
+      .video-caption {
+        .video-caption-heading {
+          font-size: 1.15rem;
+        }
+      }
+    }
+  }
+}
+
+.video-responsive {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+
+  iframe,
+  object,
+  embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

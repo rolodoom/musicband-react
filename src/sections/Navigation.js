@@ -1,11 +1,11 @@
 import React from "react";
 
-function Navigation() {
+function Navigation(props) {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div className="container">
         <a className="navbar-brand" href="#page-top">
-          <img src="assets/img/navbar-logo.svg" alt="..." />
+          <img src={props.logo} alt="..." />
         </a>
         <button
           className="navbar-toggler"

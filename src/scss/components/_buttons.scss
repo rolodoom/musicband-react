@@ -1,0 +1,67 @@
+//
+// Buttons
+//
+
+// Create a new xl button variant
+
+.btn-xl {
+    padding: 1.25rem 2.5rem;
+    font-family: $headings-font-family;
+    font-size: 1.125rem;
+    font-weight: $headings-font-weight;
+}
+
+// Create a new social button variant
+
+.btn-social {
+    height: 2.5rem;
+    width: 2.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 100%;
+}
+
+// Create a new social contact button variant
+
+.btn-social-contact {
+    height: 5rem;
+    width: 5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 100%;
+}
+
+// Create a light button variant
+
+.btn-light {
+    background-color: $white;
+    border: 1px solid $white;
+    color: $black;
+    &:hover {
+        background-color: $black;
+        border: 1px solid $black;
+        color: $primary;
+    }
+}
+
+// Create a dark button variant
+
+.btn-dark {
+    &:hover {
+        background-color: $primary;
+        border: 1px solid $primary;
+    }
+}
+
+// .btn-primary {
+//     color: $dark;
+//     &:hover {
+//         background-color: $black;
+//         border: 1px solid $primary;
+//         color: $primary;
+//     }
+// }
