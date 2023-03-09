@@ -28,12 +28,12 @@ function Releases({ releases }) {
         <div className="row">
           {sortedReleases.map((release) => {
             return (
-              <>
-                <div className={columnClasses} key={release.id}>
+              <React.Fragment key={release.id}>
+                <div className={columnClasses}>
                   <ReleaseItem release={release} />
                 </div>
                 <ReleaseModal release={release} />
-              </>
+              </React.Fragment>
             );
           })}
         </div>

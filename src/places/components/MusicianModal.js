@@ -47,7 +47,7 @@ const MusicianModal = ({ musician }) => {
                     </div>
                     <div className="col-md-8">
                       <p>{musician.description}</p>
-                      <Button className="btn btn-primary" dismiss="modal">
+                      <Button className="btn btn-primary" dismissModal>
                         <i className="fas fa-times mr-1"></i> Cerrar
                       </Button>
                     </div>

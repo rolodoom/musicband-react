@@ -21,12 +21,12 @@ function Musicians({ musicians }) {
         <div className="row">
           {musicians.map((musician) => {
             return (
-              <>
-                <div className={columnClasses} key={musician.id}>
+              <React.Fragment key={musician.id}>
+                <div className={columnClasses}>
                   <MusicianItem musician={musician} />
                 </div>
                 <MusicianModal musician={musician} />
-              </>
+              </React.Fragment>
             );
           })}
         </div>

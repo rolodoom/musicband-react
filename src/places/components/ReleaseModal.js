@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 
 import { v4 as uuidv4 } from "uuid";
 
-import { formatDate } from "../../shared/util/format";
+import { formatDate, toTitleCase } from "../../shared/util/format";
 import Button from "../../shared/components/FormElements/Button";
 
 const ReleaseModal = ({ release }) => {
@@ -60,18 +60,19 @@ const ReleaseModal = ({ release }) => {
                         {release.streaming.map((channel) => {
                           return (
                             <Button
-                              className="btn-dark btn-social mx-2"
+                              className="btn-dark  mx-2"
                               href={channel.link}
                               key={uuidv4()}
                             >
-                              <i className={`fab fa-${channel.name}`}></i>
+                              <i className={`fab fa-${channel.name}`}></i>{" "}
+                              {toTitleCase(channel.name)}
                             </Button>
                           );
                         })}
                       </p>
                     </div>
                   </div>
-                  <Button className="btn-primary" dismiss="modal">
+                  <Button className="btn-primary" dismissModal>
                     <i className="fas fa-times mr-1"></i> Cerrar
                   </Button>
                 </div>
