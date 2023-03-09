@@ -69,11 +69,11 @@ const ReleaseModal = ({ release }) => {
                           );
                         })}
                       </p>
-                      <Button className="btn-primary" dismiss="modal">
-                        <i className="fas fa-times mr-1"></i> Cerrar
-                      </Button>
                     </div>
                   </div>
+                  <Button className="btn-primary" dismiss="modal">
+                    <i className="fas fa-times mr-1"></i> Cerrar
+                  </Button>
                 </div>
               </div>
             </div>
