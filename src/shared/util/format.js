@@ -31,3 +31,21 @@ export const formatDate = (dateString) => {
   // Return the formatted date string
   return formattedDate;
 };
+
+/**
+ * A utility function to convert a string to title case
+ * @param {string} str - The string to convert to title case
+ * @returns {string} - The converted string in title case
+ */
+export function toTitleCase(str) {
+  // Convert the string to lowercase and split it into an array of words
+  const words = str.toLowerCase().split(" ");
+
+  // Loop through the words array and capitalize the first letter of each word
+  for (let i = 0; i < words.length; i++) {
+    words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+  }
+
+  // Join the words array back into a single string and return it
+  return words.join(" ");
+}
