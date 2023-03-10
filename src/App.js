@@ -15,6 +15,7 @@ import masthead from "./dev-data/masthead.json";
 import videos from "./dev-data/videos.json";
 import releases from "./dev-data/releases.json";
 import musicians from "./dev-data/musicians.json";
+import gallery from "./dev-data/gallery.json";
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
         <Releases releases={releases} />
         <Bio />
         <Musicians musicians={musicians} />
-        <Gallery />
+        <Gallery gallery={gallery} />
         <Contact band={band} />
         <Footer />
       </div>
