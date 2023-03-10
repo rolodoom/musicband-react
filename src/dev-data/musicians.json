@@ -6,9 +6,9 @@
     "image": "/assets/img/musicians/1.jpg",
     "description": "Sapiente voluptatem delectus nisi fuga vero ratione impedit minus perspiciatis quas vitae nulla, aliquam commodi aspernatur eos esse animi hic blanditiis iusto excepturi tenetur possimus. Saepe id asperiores esse doloremque voluptatem laudantium architecto nesciunt cum! At reprehenderit explicabo ut, adipisci fuga unde! Nihil omnis fugit ratione ut sit et dolores soluta inventore perferendis, natus nostrum dicta aut! Sed maxime doloribus numquam eaque culpa aperiam sequi molestiae molestias facere. Culpa reprehenderit ea, enim inventore libero in dolorum praesentium, expedita pariatur nobis cumque? Aut, libero tenetur!",
     "social": [
-      { "name": "instagram", "link": "#!" },
-      { "name": "twitter", "link": "#!" },
-      { "name": "facebook", "link": "#!" }
+      { "name": "instagram", "url": "#!" },
+      { "name": "twitter", "url": "#!" },
+      { "name": "facebook", "url": "#!" }
     ]
   },
   {
@@ -18,9 +18,9 @@
     "image": "/assets/img/musicians/2.jpg",
     "description": "Sapiente voluptatem delectus nisi fuga vero ratione impedit minus perspiciatis quas vitae nulla, aliquam commodi aspernatur eos esse animi hic blanditiis iusto excepturi tenetur possimus. Saepe id asperiores esse doloremque voluptatem laudantium architecto nesciunt cum! At reprehenderit explicabo ut, adipisci fuga unde! Nihil omnis fugit ratione ut sit et dolores soluta inventore perferendis, natus nostrum dicta aut! Sed maxime doloribus numquam eaque culpa aperiam sequi molestiae molestias facere. Culpa reprehenderit ea, enim inventore libero in dolorum praesentium, expedita pariatur nobis cumque? Aut, libero tenetur!",
     "social": [
-      { "name": "instagram", "link": "#!" },
-      { "name": "twitter", "link": "#!" },
-      { "name": "facebook", "link": "#!" }
+      { "name": "instagram", "url": "#!" },
+      { "name": "twitter", "url": "#!" },
+      { "name": "facebook", "url": "#!" }
     ]
   },
   {
@@ -30,9 +30,9 @@
     "image": "/assets/img/musicians/3.jpg",
     "description": "Sapiente voluptatem delectus nisi fuga vero ratione impedit minus perspiciatis quas vitae nulla, aliquam commodi aspernatur eos esse animi hic blanditiis iusto excepturi tenetur possimus. Saepe id asperiores esse doloremque voluptatem laudantium architecto nesciunt cum! At reprehenderit explicabo ut, adipisci fuga unde! Nihil omnis fugit ratione ut sit et dolores soluta inventore perferendis, natus nostrum dicta aut! Sed maxime doloribus numquam eaque culpa aperiam sequi molestiae molestias facere. Culpa reprehenderit ea, enim inventore libero in dolorum praesentium, expedita pariatur nobis cumque? Aut, libero tenetur!",
     "social": [
-      { "name": "instagram", "link": "#!" },
-      { "name": "twitter", "link": "#!" },
-      { "name": "facebook", "link": "#!" }
+      { "name": "instagram", "url": "#!" },
+      { "name": "twitter", "url": "#!" },
+      { "name": "facebook", "url": "#!" }
     ]
   }
 ]

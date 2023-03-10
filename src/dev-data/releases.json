@@ -9,9 +9,9 @@
     "format": "CD",
     "label": "Record Label",
     "streaming": [
-      { "name": "bandcamp", "link": "#!" },
-      { "name": "spotify", "link": "#!" },
-      { "name": "apple", "link": "#!" }
+      { "name": "bandcamp", "url": "#!" },
+      { "name": "spotify", "url": "#!" },
+      { "name": "apple", "url": "#!" }
     ]
   },
   {
@@ -24,9 +24,9 @@
     "format": "CD",
     "label": "Record Label",
     "streaming": [
-      { "name": "bandcamp", "link": "#!" },
-      { "name": "spotify", "link": "#!" },
-      { "name": "apple", "link": "#!" }
+      { "name": "bandcamp", "url": "#!" },
+      { "name": "spotify", "url": "#!" },
+      { "name": "apple", "url": "#!" }
     ]
   },
   {
@@ -39,9 +39,9 @@
     "format": "CD",
     "label": "Record Label",
     "streaming": [
-      { "name": "bandcamp", "link": "#!" },
-      { "name": "spotify", "link": "#!" },
-      { "name": "apple", "link": "#!" }
+      { "name": "bandcamp", "url": "#!" },
+      { "name": "spotify", "url": "#!" },
+      { "name": "apple", "url": "#!" }
     ]
   },
   {
@@ -54,9 +54,9 @@
     "format": "CD",
     "label": "Record Label",
     "streaming": [
-      { "name": "bandcamp", "link": "#!" },
-      { "name": "spotify", "link": "#!" },
-      { "name": "apple", "link": "#!" }
+      { "name": "bandcamp", "url": "#!" },
+      { "name": "spotify", "url": "#!" },
+      { "name": "apple", "url": "#!" }
     ]
   }
 ]
