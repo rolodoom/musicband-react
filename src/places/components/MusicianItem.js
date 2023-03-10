@@ -32,7 +32,7 @@ const MusicianItem = ({ musician }) => {
         return (
           <Button
             className="btn-primary btn-social mx-2"
-            href={social.link}
+            href={social.url}
             key={uuidv4()}
           >
             <i className={`fab fa-${social.name}`}></i>

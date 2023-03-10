@@ -60,8 +60,8 @@ const ReleaseModal = ({ release }) => {
                         {release.streaming.map((channel) => {
                           return (
                             <Button
-                              className="btn-dark  mx-2"
-                              href={channel.link}
+                              className="btn-dark mx-2 my-2"
+                              href={channel.url}
                               key={uuidv4()}
                             >
                               <i className={`fab fa-${channel.name}`}></i>{" "}
