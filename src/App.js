@@ -27,7 +27,7 @@ function App() {
         <Bio />
         <Musicians musicians={musicians} />
         <Gallery />
-        <Contact />
+        <Contact band={band} />
         <Footer />
       </div>
     </div>

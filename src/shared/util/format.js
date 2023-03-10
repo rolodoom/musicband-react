@@ -49,3 +49,51 @@ export function toTitleCase(str) {
   // Join the words array back into a single string and return it
   return words.join(" ");
 }
+
+/**
+ * Gets the file extension of a given URL.
+ *
+ * @param {string} url - The URL of the file.
+ * @returns {string} The file extension (without the dot), or an empty string if the URL has no extension.
+ */
+export function getFileExtension(url) {
+  // Get the last part of the URL by splitting it with a slash
+  const parts = url.split("/");
+  const filename = parts[parts.length - 1];
+
+  // Get the file extension by splitting the filename with a dot
+  const extensionParts = filename.split(".");
+
+  // If there is no dot, return an empty string
+  if (extensionParts.length === 1) {
+    return "";
+  }
+
+  // Otherwise, return the last part of the extension (the file type)
+  return extensionParts[extensionParts.length - 1];
+}
+
+/**
+ * Gets the FAwesome icon id string of a given extension of a file.
+ *
+ * @param {string} extension - The extension of the file.
+ * @returns {string} The file icon id.
+ */
+export function getIconId(extension) {
+  const dictionary = {
+    zip: "zipper",
+    xlsx: "excel",
+    xls: "excel",
+    docx: "word",
+    doc: "word",
+    pdf: "pdf",
+  };
+
+  // Check if the extension is in the dictionary
+  if (extension in dictionary) {
+    // If it is, return its definition
+    return `file-${dictionary[extension]}`;
+  }
+  // If it's not, return null
+  return "file";
+}

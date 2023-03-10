@@ -1,6 +1,16 @@
 import React from "react";
+import { v4 as uuidv4 } from "uuid";
 
-function Contact() {
+import Button from "../../shared/components/FormElements/Button";
+import {
+  getFileExtension,
+  getIconId,
+  toTitleCase,
+} from "../../shared/util/format";
+
+function Contact({ band }) {
+  const showPDFs = band.press.length > 0;
+  const showSocial = band.social.length > 0;
   return (
     <section className="page-section section-dark" id="contact">
       <div className="container">
@@ -10,32 +20,44 @@ function Contact() {
             Lorem ipsum dolor sit amet consectetur.
           </h3>
         </div>
-        <div className="row align-items-center pb-5">
-          <div className="col-lg-12 text-center">
-            <a className="btn btn-primary btn-xl mx-2" href="#!">
-              <i className="far fa-file-pdf"></i> Rider
-            </a>
-            <a className="btn btn-secondary btn-xl mx-2" href="#!">
-              <i className="far fa-file-pdf"></i> Brochure
-            </a>
+        {showPDFs && (
+          <div className="row align-items-center pb-5">
+            <div className="col-lg-12 text-center">
+              {band.press.map((file) => {
+                const extension = getFileExtension(file.url);
+                const icon = getIconId(extension);
+                return (
+                  <Button
+                    className={`btn-${file.color || "primary"} btn-xl mx-2`}
+                    href={file.url}
+                    key={uuidv4()}
+                  >
+                    <i className={`far fa-${icon}`}></i>{" "}
+                    {toTitleCase(file.name)}
+                  </Button>
+                );
+              })}
+            </div>
           </div>
-        </div>
-        <div className="row align-items-center">
-          <div className="col-lg-12 text-center">
-            <a className="btn btn-dark btn-social-contact mx-2" href="#!">
-              <i className="fab fa-instagram fa-2x"></i>
-            </a>
-            <a className="btn btn-dark btn-social-contact mx-2" href="#!">
-              <i className="fab fa-youtube fa-2x"></i>
-            </a>
-            <a className="btn btn-dark btn-social-contact mx-2" href="#!">
-              <i className="fab fa-facebook-f fa-2x"></i>
-            </a>
-            <a className="btn btn-dark btn-social-contact mx-2" href="#!">
-              <i className="fab fa-twitter fa-2x"></i>
-            </a>
+        )}
+
+        {showSocial && (
+          <div className="row align-items-center">
+            <div className="col-lg-12 text-center">
+              {band.social.map((social) => {
+                return (
+                  <Button
+                    className="btn-dark btn-social-contact mx-2"
+                    href={social.url}
+                    key={uuidv4()}
+                  >
+                    <i className={`fab fa-${social.name} fa-2x`}></i>
+                  </Button>
+                );
+              })}
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </section>
   );

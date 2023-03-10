@@ -1,4 +1,14 @@
 {
   "name": "MusicBand",
-  "logo": "/assets/img/navbar-logo.svg"
+  "logo": "/assets/img/navbar-logo.svg",
+  "press": [
+    { "name": "rider", "url": "#!.pdf", "color": "secondary" },
+    { "name": "brochure", "url": "#!.pdf" },
+    { "name": "photos", "url": "#!.zip" }
+  ],
+  "social": [
+    { "name": "instagram", "url": "#!" },
+    { "name": "twitter", "url": "#!" },
+    { "name": "facebook", "url": "#!" }
+  ]
 }
