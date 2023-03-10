@@ -1,0 +1,62 @@
+[
+  {
+    "id": "60b9d1e06cb2c22777d12b5f",
+    "title": "All things New",
+    "subtitle": "All Lorem ipsum dolor sit amet consectetur.",
+    "date": "2010-05-06",
+    "image": "/assets/img/releases/1.jpg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!",
+    "format": "CD",
+    "label": "Record Label",
+    "streaming": [
+      { "name": "bandcamp", "link": "#!" },
+      { "name": "spotify", "link": "#!" },
+      { "name": "apple", "link": "#!" }
+    ]
+  },
+  {
+    "id": "5f5b43c5f926754e43a9c7a0",
+    "title": "Renegade Waves",
+    "subtitle": "Lorem ipsum dolor sit amet consectetur.",
+    "date": "2013-06-16",
+    "image": "/assets/img/releases/2.jpg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!",
+    "format": "CD",
+    "label": "Record Label",
+    "streaming": [
+      { "name": "bandcamp", "link": "#!" },
+      { "name": "spotify", "link": "#!" },
+      { "name": "apple", "link": "#!" }
+    ]
+  },
+  {
+    "id": "5e8475f5ef5ff4560e547a18",
+    "title": "Jungle - The Hits",
+    "subtitle": "Lorem ipsum dolor sit amet consectetur.",
+    "date": "2015-01-22",
+    "image": "/assets/img/releases/3.jpg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!",
+    "format": "CD",
+    "label": "Record Label",
+    "streaming": [
+      { "name": "bandcamp", "link": "#!" },
+      { "name": "spotify", "link": "#!" },
+      { "name": "apple", "link": "#!" }
+    ]
+  },
+  {
+    "id": "5dc5f9d5f5c5c561e4b5964a",
+    "title": "The Alternative",
+    "subtitle": "Lorem ipsum dolor sit amet consectetur.",
+    "date": "2020-05-06",
+    "image": "/assets/img/releases/4.jpg",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!",
+    "format": "CD",
+    "label": "Record Label",
+    "streaming": [
+      { "name": "bandcamp", "link": "#!" },
+      { "name": "spotify", "link": "#!" },
+      { "name": "apple", "link": "#!" }
+    ]
+  }
+]

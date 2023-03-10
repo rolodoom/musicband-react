@@ -10,18 +10,22 @@ import Footer from "./places/sections/Footer";
 
 import "./scss/styles.scss";
 
-import DUMMY_BANDINFO from "./dev-data/band-info.json";
+import band from "./dev-data/band.json";
+import masthead from "./dev-data/masthead.json";
+import videos from "./dev-data/videos.json";
+import releases from "./dev-data/releases.json";
+import musicians from "./dev-data/musicians.json";
 
 function App() {
   return (
     <div className="App">
       <div id="page-top">
-        <Navigation logo={DUMMY_BANDINFO.logo} />
-        <Masthead bgImage={DUMMY_BANDINFO.masthead.bgImage} />
-        <Videos videos={DUMMY_BANDINFO.videos} />
-        <Releases releases={DUMMY_BANDINFO.releases} />
+        <Navigation logo={band.logo} />
+        <Masthead bgImage={masthead.bgImage} />
+        <Videos videos={videos} />
+        <Releases releases={releases} />
         <Bio />
-        <Musicians musicians={DUMMY_BANDINFO.musicians} />
+        <Musicians musicians={musicians} />
         <Gallery />
         <Contact />
         <Footer />
