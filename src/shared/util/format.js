@@ -97,3 +97,16 @@ export function getIconId(extension) {
   // If it's not, return null
   return "file";
 }
+
+/**
+ * Formats a string containing line breaks by replacing the line breaks with HTML <br/> tags.
+ *
+ * @param {string} inputString The string to format.
+ * @returns {string} A new string with the line breaks replaced with HTML <br/> tags.
+ */
+export const formatStringWithBreaks = (inputString) => {
+  // Replace all occurrences of '\n' with '<br/>'.
+  const outputString = inputString.replace(/\n/g, "<br />");
+
+  return outputString;
+};
