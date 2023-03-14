@@ -1,11 +1,12 @@
 import React from "react";
+import { v4 as uuidv4 } from "uuid";
 
 import ReleaseItem from "../components/ReleaseItem";
 import ReleaseModal from "../components/ReleaseModal";
 
 import { getSortedItems } from "../../shared/util/filter";
 
-function Releases({ releases }) {
+function Releases({ releases, streaming }) {
   const sortedReleases = getSortedItems([...releases]);
 
   const commonClasses = "col-sm-6 mb-4";
@@ -37,47 +38,29 @@ function Releases({ releases }) {
             );
           })}
         </div>
-        <div className="row py-1">
-          <div className="col-md-12 my-3">
-            <div className="d-flex flex-column flex-sm-row flex-wrap justify-content-center">
-              <a className="streaming-service my-3" href="#!">
-                <img
-                  className="img-fluid d-block mx-auto"
-                  src="assets/img/logos/spotify.svg"
-                  alt=""
-                />
-              </a>
-              <a className="streaming-service my-3" href="#!">
-                <img
-                  className="img-fluid d-block mx-auto"
-                  src="assets/img/logos/deezer.svg"
-                  alt=""
-                />
-              </a>
-              <a className="streaming-service my-3" href="#!">
-                <img
-                  className="img-fluid d-block mx-auto"
-                  src="assets/img/logos/applemusic.svg"
-                  alt=""
-                />
-              </a>
-              <a className="streaming-service my-3" href="#!">
-                <img
-                  className="img-fluid d-block mx-auto"
-                  src="assets/img/logos/amazonmusic.svg"
-                  alt=""
-                />
-              </a>
-              <a className="streaming-service my-3" href="#!">
-                <img
-                  className="img-fluid d-block mx-auto"
-                  src="assets/img/logos/bandcamp.svg"
-                  alt=""
-                />
-              </a>
+        {streaming.length > 0 && (
+          <div className="row py-1">
+            <div className="col-md-12 my-3">
+              <div className="d-flex flex-column flex-sm-row flex-wrap justify-content-center">
+                {streaming.map((service) => {
+                  return (
+                    <a
+                      className="streaming-service my-3"
+                      href={service.url}
+                      key={uuidv4()}
+                    >
+                      <img
+                        className="img-fluid d-block mx-auto"
+                        src={`assets/img/logos/${service.name}.svg`}
+                        alt={service.name}
+                      />
+                    </a>
+                  );
+                })}
+              </div>
             </div>
           </div>
-        </div>
+        )}
       </div>
     </section>
   );

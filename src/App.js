@@ -25,7 +25,7 @@ function App() {
         <Navigation logo={band.logo} />
         <Masthead bgImage={masthead.bgImage} />
         <Videos videos={videos} />
-        <Releases releases={releases} />
+        <Releases releases={releases} streaming={band.streaming} />
         <Bio bios={bios} />
         <Musicians musicians={musicians} />
         <Gallery gallery={gallery} />

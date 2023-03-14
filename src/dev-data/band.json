@@ -10,5 +10,12 @@
     { "name": "instagram", "url": "#!" },
     { "name": "twitter", "url": "#!" },
     { "name": "facebook", "url": "#!" }
+  ],
+  "streaming": [
+    { "name": "spotify", "url": "#!" },
+    { "name": "deezer", "url": "#!" },
+    { "name": "applemusic", "url": "#!" },
+    { "name": "amazonmusic", "url": "#!" },
+    { "name": "bandcamp", "url": "#!" }
   ]
 }
