@@ -8,9 +8,9 @@ import {
   toTitleCase,
 } from "../../shared/util/format";
 
-function Contact({ band }) {
-  const showPDFs = band.press.length > 0;
-  const showSocial = band.social.length > 0;
+function Contact({ data: { press, social } }) {
+  const showPDFs = press.length > 0;
+  const showSocial = social.length > 0;
   return (
     <section className="page-section section-dark" id="contact">
       <div className="container">
@@ -23,7 +23,7 @@ function Contact({ band }) {
         {showPDFs && (
           <div className="row align-items-center pb-5">
             <div className="col-lg-12 text-center">
-              {band.press.map((file) => {
+              {press.map((file) => {
                 const extension = getFileExtension(file.url);
                 const icon = getIconId(extension);
                 return (
@@ -44,7 +44,7 @@ function Contact({ band }) {
         {showSocial && (
           <div className="row align-items-center">
             <div className="col-lg-12 text-center">
-              {band.social.map((social) => {
+              {social.map((social) => {
                 return (
                   <Button
                     className="btn-dark btn-social-contact mx-2"

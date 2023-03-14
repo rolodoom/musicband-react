@@ -1,44 +1,46 @@
-[
-  {
-    "url": "/assets/img/gallery/1028.jpg",
-    "label": "Kota Garut, Indonesia"
-  },
-  {
-    "url": "/assets/img/gallery/1033.jpg",
-    "label": "Zurich Airport, Zürich-Flughafen, Switzerland"
-  },
-  {
-    "url": "/assets/img/gallery/1039.jpg",
-    "label": "Park relaxing time"
-  },
-  {
-    "url": "/assets/img/gallery/103.jpg",
-    "label": "Park relaxing time. Active Oval Loop, Atlanta, GA 30309, USA, United States"
-  },
-  {
-    "url": "/assets/img/gallery/1047.jpg",
-    "label": "An Alleyway in Seattle, Washington."
-  },
-  {
-    "url": "/assets/img/gallery/1048.jpg",
-    "label": "Office buildings under clouds"
-  },
-  { "url": "/assets/img/gallery/1065.jpg", "label": "Bastia, Corse, France" },
-  {
-    "url": "/assets/img/gallery/1073.jpg",
-    "label": "FIKA Cafe, Toronto, Canada"
-  },
-  { "url": "/assets/img/gallery/110.jpg", "label": "Evening in a pasture" },
-  {
-    "url": "/assets/img/gallery/116.jpg",
-    "label": "A beautiful farmhouse in Toscana. Featured in Gladiator movie"
-  },
-  {
-    "url": "/assets/img/gallery/142.jpg",
-    "label": "External view of Chateau de Chambord in France."
-  },
-  {
-    "url": "/assets/img/gallery/155.jpg",
-    "label": "Railroad tracks by the beach"
-  }
-]
+{
+  "gallery": [
+    {
+      "url": "/assets/img/gallery/1028.jpg",
+      "label": "Kota Garut, Indonesia"
+    },
+    {
+      "url": "/assets/img/gallery/1033.jpg",
+      "label": "Zurich Airport, Zürich-Flughafen, Switzerland"
+    },
+    {
+      "url": "/assets/img/gallery/1039.jpg",
+      "label": "Park relaxing time"
+    },
+    {
+      "url": "/assets/img/gallery/103.jpg",
+      "label": "Park relaxing time. Active Oval Loop, Atlanta, GA 30309, USA, United States"
+    },
+    {
+      "url": "/assets/img/gallery/1047.jpg",
+      "label": "An Alleyway in Seattle, Washington."
+    },
+    {
+      "url": "/assets/img/gallery/1048.jpg",
+      "label": "Office buildings under clouds"
+    },
+    { "url": "/assets/img/gallery/1065.jpg", "label": "Bastia, Corse, France" },
+    {
+      "url": "/assets/img/gallery/1073.jpg",
+      "label": "FIKA Cafe, Toronto, Canada"
+    },
+    { "url": "/assets/img/gallery/110.jpg", "label": "Evening in a pasture" },
+    {
+      "url": "/assets/img/gallery/116.jpg",
+      "label": "A beautiful farmhouse in Toscana. Featured in Gladiator movie"
+    },
+    {
+      "url": "/assets/img/gallery/142.jpg",
+      "label": "External view of Chateau de Chambord in France."
+    },
+    {
+      "url": "/assets/img/gallery/155.jpg",
+      "label": "Railroad tracks by the beach"
+    }
+  ]
+}

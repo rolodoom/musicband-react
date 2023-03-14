@@ -5,16 +5,14 @@ import { getSortedItems } from "../../shared/util/filter";
 
 import BioItem from "../components/BioItem";
 
-const Bio = ({ bios }) => {
+const Bio = ({ data: { bios, title, subtitle } }) => {
   const sortedBios = getSortedItems([...bios], "asc");
   return (
     <section className="page-section" id="bio">
       <div className="container">
         <div className="text-center">
-          <h2 className="section-heading text-uppercase">Bio</h2>
-          <h3 className="section-subheading">
-            Lorem ipsum dolor sit amet consectetur.
-          </h3>
+          <h2 className="section-heading text-uppercase">{title || "Bio"}</h2>
+          <h3 className="section-subheading">{subtitle || ""}</h3>
         </div>
         <ul className="timeline">
           {sortedBios.map((bio, index, arr) => {

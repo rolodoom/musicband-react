@@ -6,7 +6,7 @@ import ReleaseModal from "../components/ReleaseModal";
 
 import { getSortedItems } from "../../shared/util/filter";
 
-function Releases({ releases, streaming }) {
+function Releases({ data: { releases, streaming, title, subtitle } }) {
   const sortedReleases = getSortedItems([...releases]);
 
   const commonClasses = "col-sm-6 mb-4";
@@ -21,10 +21,8 @@ function Releases({ releases, streaming }) {
     >
       <div className="container">
         <div className="text-center">
-          <h2 className="section-heading text-uppercase">Music</h2>
-          <h3 className="section-subheading">
-            Lorem ipsum dolor sit amet consectetur.
-          </h3>
+          <h2 className="section-heading text-uppercase">{title || "Music"}</h2>
+          <h3 className="section-subheading">{subtitle || ""}</h3>
         </div>
         <div className="row">
           {sortedReleases.map((release) => {

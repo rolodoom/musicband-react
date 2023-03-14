@@ -7,7 +7,7 @@ import {
   getSortedItemsWithoutLatest,
 } from "../../shared/util/filter";
 
-function Videos({ videos }) {
+function Videos({ data: { videos, title, subtitle } }) {
   const sortedVideos = getSortedItemsWithoutLatest([...videos]);
   const latestVideo = getLatestItem(videos);
 
@@ -15,10 +15,10 @@ function Videos({ videos }) {
     <section className="videos page-section" id="videos">
       <div className="container">
         <div className="text-center">
-          <h2 className="section-heading text-uppercase">Videos</h2>
-          <h3 className="section-subheading">
-            Lorem ipsum dolor sit amet consectetur.
-          </h3>
+          <h2 className="section-heading text-uppercase">
+            {title || "Videos"}
+          </h2>
+          <h3 className="section-subheading">{subtitle || ""}</h3>
         </div>
         <div className="row">
           <div className="d-none d-xl-block col-xl-1"></div>
