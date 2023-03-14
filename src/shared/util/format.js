@@ -37,7 +37,7 @@ export const formatDate = (dateString) => {
  * @param {string} str - The string to convert to title case
  * @returns {string} - The converted string in title case
  */
-export function toTitleCase(str) {
+export const toTitleCase = (str) => {
   // Convert the string to lowercase and split it into an array of words
   const words = str.toLowerCase().split(" ");
 
@@ -48,7 +48,7 @@ export function toTitleCase(str) {
 
   // Join the words array back into a single string and return it
   return words.join(" ");
-}
+};
 
 /**
  * Gets the file extension of a given URL.
@@ -56,7 +56,7 @@ export function toTitleCase(str) {
  * @param {string} url - The URL of the file.
  * @returns {string} The file extension (without the dot), or an empty string if the URL has no extension.
  */
-export function getFileExtension(url) {
+export const getFileExtension = (url) => {
   // Get the last part of the URL by splitting it with a slash
   const parts = url.split("/");
   const filename = parts[parts.length - 1];
@@ -71,7 +71,7 @@ export function getFileExtension(url) {
 
   // Otherwise, return the last part of the extension (the file type)
   return extensionParts[extensionParts.length - 1];
-}
+};
 
 /**
  * Gets the FAwesome icon id string of a given extension of a file.
@@ -79,7 +79,7 @@ export function getFileExtension(url) {
  * @param {string} extension - The extension of the file.
  * @returns {string} The file icon id.
  */
-export function getIconId(extension) {
+export const getIconId = (extension) => {
   const dictionary = {
     zip: "zipper",
     xlsx: "excel",
@@ -96,7 +96,7 @@ export function getIconId(extension) {
   }
   // If it's not, return null
   return "file";
-}
+};
 
 /**
  * Formats a string containing line breaks by replacing the line breaks with HTML <br/> tags.
