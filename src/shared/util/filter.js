@@ -34,13 +34,25 @@ export const getSortedItemsWithoutLatest = (items) => {
 
 /**
  * This function takes an array of items as input and returns a new array
- * of items sorted by date in descending order.
+ * of items sorted by date in given order.
+ * Default soret is descending.
  * @param {array} items - An array of items.
+ * @param {string} order - An string with the order ASC, DESC.
  * @returns {array} Sorted array.
  */
-export const getSortedItems = (items) => {
+export const getSortedItems = (items, order) => {
   // Make a copy of the original array to avoid modifying it
   const copy = [...items];
+
+  if (order && order.toLowerCase() === "asc") {
+    // Sort the items by date in ascending order
+    const sortedItems = copy.sort(
+      (a, b) => new Date(a.date) - new Date(b.date)
+    );
+
+    // Return the sorted array
+    return sortedItems;
+  }
 
   // Sort the items by date in descending order
   const sortedItems = copy.sort((a, b) => new Date(b.date) - new Date(a.date));
