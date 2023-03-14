@@ -1,54 +1,54 @@
 // Styling for the team section
 .musician {
-    margin-bottom: 3rem;
-    text-align: center;
-    img {
-        width: 14rem;
-        // height: 14rem;
-        // border: 0.5rem solid fade-out($black, 0.9);
-    }
-    h4 {
-        margin-top: 1.5rem;
-        margin-bottom: 0;
-    }
+	margin-bottom: 3rem;
+	text-align: center;
+	img {
+		width: 14rem;
+		// height: 14rem;
+		// border: 0.5rem solid fade-out($black, 0.9);
+	}
+	h4 {
+		margin-top: 1.5rem;
+		margin-bottom: 0;
+	}
 
-    .musician-item {
-        max-width: 25rem;
-        margin-left: auto;
-        margin-right: auto;
+	.musician-item {
+		max-width: 25rem;
+		margin-left: auto;
+		margin-right: auto;
 
-        .musician-image {
-            width: 100% !important;
-        }
-        .musician-link {
-            position: relative;
-            display: block;
-            margin: 0 auto;
-            .musician-hover {
-                display: flex;
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                background: none;
-                align-items: center;
-                justify-content: center;
-                opacity: 0;
-                transition: opacity ease-in-out 0.25s;
-                .musician-hover-content {
-                    font-size: 1.25rem;
-                    color: $primary;
-                    transition: all ease-in-out 0.25s;
-                }
-            }
-            &:hover {
-                .musician-hover {
-                    opacity: 1;
-                    background: fade-out($primary, 0.1);
-                    .musician-hover-content {
-                        color: $white;
-                    }
-                }
-            }
-        }
-    }
+		.musician-image {
+			width: 100% !important;
+		}
+		.musician-link {
+			position: relative;
+			display: block;
+			margin: 0 auto;
+			.musician-hover {
+				display: flex;
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background: none;
+				align-items: center;
+				justify-content: center;
+				opacity: 0;
+				transition: opacity ease-in-out 0.25s;
+				.musician-hover-content {
+					font-size: 1.25rem;
+					color: $primary;
+					transition: all ease-in-out 0.25s;
+				}
+			}
+			&:hover {
+				.musician-hover {
+					opacity: 1;
+					background: fade-out($primary, 0.1);
+					.musician-hover-content {
+						color: $white;
+					}
+				}
+			}
+		}
+	}
 }
