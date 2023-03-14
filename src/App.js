@@ -16,6 +16,7 @@ import videos from "./dev-data/videos.json";
 import releases from "./dev-data/releases.json";
 import musicians from "./dev-data/musicians.json";
 import gallery from "./dev-data/gallery.json";
+import bios from "./dev-data/bio.json";
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
         <Masthead bgImage={masthead.bgImage} />
         <Videos videos={videos} />
         <Releases releases={releases} />
-        <Bio />
+        <Bio bios={bios} />
         <Musicians musicians={musicians} />
         <Gallery gallery={gallery} />
         <Contact band={band} />
