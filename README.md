@@ -4,8 +4,6 @@ This is a React implementation of [MusicBand](https://github.com/rolodoom/musicb
 
 ## Preview
 
-![MusicBand-React Preview](src/screenshots/screenshot.jpg)
-
 [![MusicBand Preview](src/screenshots/screenshot.jpg)](https://musicband-react-rolodoom.netlify.app/)
 
 **[View Live Preview](https://musicband-react-rolodoom.netlify.app/)**
