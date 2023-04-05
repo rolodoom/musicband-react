@@ -4,8 +4,8 @@ import { v4 as uuidv4 } from "uuid";
 import GalleryItem from "../components/GalleryItem";
 import { shuffleItems } from "../../shared/util/filter";
 
-function Gallery({ data: { gallery } }) {
-  const shuffleGallery = shuffleItems(gallery);
+function Gallery({ data: { images } }) {
+  const shuffleGallery = shuffleItems(images);
   return (
     <section className="portfolio page-section section-gallery" id="gallery">
       <div className="row g-0">

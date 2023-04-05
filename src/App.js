@@ -10,44 +10,37 @@ import Footer from "./places/sections/Footer";
 
 import "./scss/styles.scss";
 
-import infoData from "./dev-data/info.json";
-import mastheadData from "./dev-data/masthead.json";
-import videoData from "./dev-data/videos.json";
-import releasesData from "./dev-data/releases.json";
-import musiciansData from "./dev-data/musicians.json";
-import galleryData from "./dev-data/gallery.json";
-import bioData from "./dev-data/bio.json";
-import contactData from "./dev-data/contact.json";
+import DB from "./dev-data/database.json";
 
 const releaseDataObj = {
-  ...releasesData,
-  streaming: infoData.band.streaming,
+  ...DB.releases,
+  streaming: DB.band.streaming,
 };
 
 const contactDataObj = {
-  ...contactData,
-  press: infoData.band.press,
-  social: infoData.band.social,
+  ...DB.contact,
+  press: DB.band.press,
+  social: DB.band.social,
 };
 
-const footerData = {
-  bandName: infoData.band.name,
-  credits: infoData.credits,
+const footerDataObj = {
+  bandName: DB.band.name,
+  credits: DB.credits,
 };
 
 function App() {
   return (
     <div className="App">
       <div id="page-top">
-        <Navigation logo={infoData.band.logo} />
-        <Masthead data={mastheadData} />
-        <Videos data={videoData} />
+        <Navigation logo={DB.band.logo} />
+        <Masthead data={DB.masthead} />
+        <Videos data={DB.videos} />
         <Releases data={releaseDataObj} />
-        <Bio data={bioData} />
-        <Musicians data={musiciansData} />
-        <Gallery data={galleryData} />
+        <Bio data={DB.bio} />
+        <Musicians data={DB.musicians} />
+        <Gallery data={DB.gallery} />
         <Contact data={contactDataObj} />
-        <Footer data={footerData} />
+        <Footer data={footerDataObj} />
       </div>
     </div>
   );
