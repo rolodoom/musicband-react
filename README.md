@@ -6,6 +6,10 @@ This is a React implementation of [MusicBand](https://github.com/rolodoom/musicb
 
 ![MusicBand-React Preview](src/screenshots/screenshot.jpg)
 
+[![MusicBand Preview](src/screenshots/screenshot.jpg)](https://musicband-react-rolodoom.netlify.app/)
+
+**[View Live Preview](https://musicband-react-rolodoom.netlify.app/)**
+
 ## Status
 
 [![GitHub license](https://img.shields.io/badge/license-GPL--3.0-blue)](https://raw.githubusercontent.com/rolodoom/musicband-react/master/LICENSE)
