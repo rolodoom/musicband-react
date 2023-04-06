@@ -12,7 +12,7 @@ function Footer({ data: { bandName, credits } }) {
           </div>
           <div className="col-lg-4 my-3 my-lg-0"></div>
           <div className="col-lg-4 text-lg-end">
-            code by{" "}
+            {credits.copy || "code by"}{" "}
             <a className="link text-decoration-none me-3" href={credits.url}>
               {credits.name}
             </a>

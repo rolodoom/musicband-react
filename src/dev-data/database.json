@@ -23,6 +23,7 @@
   },
   "credits": {
     "name": "credits",
+    "copy": "code by",
     "url": "#!"
   },
   "masthead": {
