@@ -1,6 +1,7 @@
 {
   "band": {
     "name": "MusicBand",
+    "description": "A musician page theme",
     "logo": "/assets/img/navbar-logo.svg",
     "press": [
       { "name": "rider", "url": "#!.pdf", "color": "secondary" },
