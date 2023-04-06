@@ -8,17 +8,17 @@ import {
   toTitleCase,
 } from "../../shared/util/format";
 
-function Contact({ data: { press, social } }) {
+function Contact({ data: { title, subtitle, press, social } }) {
   const showPDFs = press.length > 0;
   const showSocial = social.length > 0;
   return (
     <section className="page-section section-dark" id="contact">
       <div className="container">
         <div className="text-center">
-          <h2 className="section-heading text-uppercase">Contact Us</h2>
-          <h3 className="section-subheading">
-            Lorem ipsum dolor sit amet consectetur.
-          </h3>
+          <h2 className="section-heading text-uppercase">
+            {title || "Contact Us"}
+          </h2>
+          <h3 className="section-subheading">{subtitle || ""}</h3>
         </div>
         {showPDFs && (
           <div className="row align-items-center pb-5">
