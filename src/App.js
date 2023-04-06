@@ -1,3 +1,5 @@
+import usePageMetadata from "./shared/util/usePageMetadata";
+
 import Navigation from "./places/sections/Navigation";
 import Masthead from "./places/sections/Masthead";
 import Videos from "./places/sections/Videos";
@@ -29,6 +31,12 @@ const footerDataObj = {
 };
 
 function App() {
+  usePageMetadata({
+    sitename: DB.band.name || "MusicBand",
+    description: DB.band.description || "A musician page theme",
+    slogan: DB.band.description || "A musician page theme",
+  });
+
   return (
     <div className="App">
       <div id="page-top">
