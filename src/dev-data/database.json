@@ -78,7 +78,6 @@
     "subtitle": "In massa tempor nec feugiat nisl pretium.",
     "releases": [
       {
-        "id": "60b9d1e06cb2c22777d12b5f",
         "title": "All things New",
         "subtitle": "All Lorem ipsum dolor sit amet consectetur.",
         "date": "2010-05-06",
@@ -93,7 +92,6 @@
         ]
       },
       {
-        "id": "5f5b43c5f926754e43a9c7a0",
         "title": "Renegade Waves",
         "subtitle": "Lorem ipsum dolor sit amet consectetur.",
         "date": "2013-06-16",
@@ -108,7 +106,6 @@
         ]
       },
       {
-        "id": "5e8475f5ef5ff4560e547a18",
         "title": "Jungle - The Hits",
         "subtitle": "Lorem ipsum dolor sit amet consectetur.",
         "date": "2015-01-22",
@@ -123,7 +120,6 @@
         ]
       },
       {
-        "id": "5dc5f9d5f5c5c561e4b5964a",
         "title": "The Alternative",
         "subtitle": "Lorem ipsum dolor sit amet consectetur.",
         "date": "2020-05-06",
@@ -145,7 +141,6 @@
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.",
     "musicians": [
       {
-        "id": "5a4f8bc4a53a89105d9c3b3a",
         "name": "Kay Garland",
         "instrument": "Vocals / Guitar",
         "image": "/assets/img/musicians/1.jpg",
@@ -157,7 +152,6 @@
         ]
       },
       {
-        "id": "5b98038447c3f6011a3b8e3d",
         "name": "Larry Parker",
         "instrument": "Bass",
         "image": "/assets/img/musicians/2.jpg",
@@ -169,7 +163,6 @@
         ]
       },
       {
-        "id": "5d9fb19988e8ec08201b7d22",
         "name": "Diana Petersen",
         "instrument": "Drums",
         "image": "/assets/img/musicians/3.jpg",
