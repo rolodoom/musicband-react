@@ -176,6 +176,7 @@
     ]
   },
   "gallery": {
+    "title": "Gallery",
     "images": [
       {
         "url": "/assets/img/gallery/1028.jpg",
