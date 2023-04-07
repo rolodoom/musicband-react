@@ -8,22 +8,30 @@ const MusicianItem = ({ musician }) => {
   return (
     <div className="musician">
       <div className="musician-item">
-        <a
-          className="musician-link"
-          data-bs-toggle="modal"
-          href={`#modal_${musician.id}`}
-        >
-          <div className="musician-hover">
-            <div className="musician-hover-content">
-              <i className="fas fa-plus fa-3x"></i>
+        {musician.description ? (
+          <a
+            className="musician-link"
+            data-bs-toggle="modal"
+            href={`#modal_${musician.id}`}
+          >
+            <div className="musician-hover">
+              <div className="musician-hover-content">
+                <i className="fas fa-plus fa-3x"></i>
+              </div>
             </div>
-          </div>
+            <img
+              className="img-fluid musician-image"
+              src={musician.image}
+              alt={`${musician.name}`}
+            />
+          </a>
+        ) : (
           <img
             className="img-fluid musician-image"
             src={musician.image}
             alt={`${musician.name}`}
           />
-        </a>
+        )}
       </div>
       <h4>{musician.name}</h4>
       <p>{musician.instrument}</p>

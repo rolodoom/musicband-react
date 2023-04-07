@@ -27,7 +27,7 @@ function Musicians({ data: { musicians, title, subtitle, description } }) {
                 <div className={columnClasses}>
                   <MusicianItem musician={musician} />
                 </div>
-                <MusicianModal musician={musician} />
+                {musician.description && <MusicianModal musician={musician} />}
               </React.Fragment>
             );
           })}
