@@ -3,7 +3,7 @@ import React from "react";
 import { getYouTubeThumbnailUrl, formatDate } from "../../shared/util/format";
 
 const VideoItem = ({ video, feature }) => {
-  const formattedDate = formatDate(video.publishedDate);
+  const formattedDate = formatDate(video.date);
 
   return (
     <div className="video-item">
