@@ -2,15 +2,16 @@
 
 This is a React implementation of [MusicBand](https://github.com/rolodoom/musicband) one page, musician page theme built with [Bootstrap](https://getbootstrap.com/) and forked from [Agency](https://startbootstrap.com/theme/agency) by [Start Bootstrap](https://startbootstrap.com/).
 
+## Status
+
+[![GitHub license](https://img.shields.io/badge/license-GPL--3.0-blue)](https://raw.githubusercontent.com/rolodoom/musicband-react/master/LICENSE)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f7f1c239-fefc-4a1d-8be3-36f885031479/deploy-status)](https://app.netlify.com/sites/musicband-react-rolodoom/deploys)
+
 ## Preview
 
 [![MusicBand Preview](src/screenshots/screenshot.jpg)](https://musicband-react-rolodoom.netlify.app/)
 
 **[View Live Preview](https://musicband-react-rolodoom.netlify.app/)**
-
-## Status
-
-[![GitHub license](https://img.shields.io/badge/license-GPL--3.0-blue)](https://raw.githubusercontent.com/rolodoom/musicband-react/master/LICENSE)
 
 ## Usage
 
