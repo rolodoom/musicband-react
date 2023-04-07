@@ -30,6 +30,21 @@ const footerDataObj = {
   credits: DB.credits,
 };
 
+const navigationDataObj = {
+  bandName: DB.band.name || "MusicBand",
+  logo: DB.band.logo || "/assets/img/navbar-logo.svg",
+  items: {
+    videos: DB.videos.title || "Videos",
+    releases: DB.releases.title || "Releases",
+    musicians: DB.musicians.title || "Musicians",
+    bio: DB.bio.title || "Biography",
+    gallery: DB.gallery.title || "Gallery",
+    contact: DB.contact.title || "Contact",
+  },
+};
+
+console.log(navigationDataObj);
+
 function App() {
   usePageMetadata({
     sitename: DB.band.name || "MusicBand",
@@ -40,7 +55,7 @@ function App() {
   return (
     <div className="App">
       <div id="page-top">
-        <Navigation logo={DB.band.logo} />
+        <Navigation data={navigationDataObj} />
         <Masthead data={DB.masthead} />
         <Videos data={DB.videos} />
         <Releases data={releaseDataObj} />
