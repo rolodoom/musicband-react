@@ -36,8 +36,8 @@ const navigationDataObj = {
   items: {
     videos: DB.videos.title || "Videos",
     releases: DB.releases.title || "Releases",
-    musicians: DB.musicians.title || "Musicians",
     bio: DB.bio.title || "Biography",
+    musicians: DB.musicians.title || "Musicians",
     gallery: DB.gallery.title || "Gallery",
     contact: DB.contact.title || "Contact",
   },
