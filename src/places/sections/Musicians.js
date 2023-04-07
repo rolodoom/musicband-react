@@ -1,4 +1,5 @@
 import React from "react";
+import { v4 as uuidv4 } from "uuid";
 
 import MusicianItem from "../components/MusicianItem";
 import MusicianModal from "../components/MusicianModal";
@@ -20,6 +21,7 @@ function Musicians({ data: { musicians, title, subtitle, description } }) {
         </div>
         <div className="row">
           {musicians.map((musician) => {
+            musician.id = uuidv4();
             return (
               <React.Fragment key={musician.id}>
                 <div className={columnClasses}>

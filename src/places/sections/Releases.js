@@ -26,6 +26,7 @@ function Releases({ data: { releases, streaming, title, subtitle } }) {
         </div>
         <div className="row">
           {sortedReleases.map((release) => {
+            release.id = uuidv4();
             return (
               <React.Fragment key={release.id}>
                 <div className={columnClasses}>
