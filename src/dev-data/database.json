@@ -1,0 +1,274 @@
+{
+  "band": {
+    "name": "MusicBand",
+    "slogan": "A musician page theme",
+    "description": "A musician page theme",
+    "logo": "/assets/img/navbar-logo.svg",
+    "press": [
+      { "name": "rider", "url": "#!.pdf", "color": "secondary" },
+      { "name": "brochure", "url": "#!.pdf" },
+      { "name": "photos", "url": "#!.zip" }
+    ],
+    "social": [
+      { "name": "instagram", "url": "#!" },
+      { "name": "twitter", "url": "#!" },
+      { "name": "facebook", "url": "#!" }
+    ],
+    "streaming": [
+      { "name": "spotify", "url": "#!" },
+      { "name": "deezer", "url": "#!" },
+      { "name": "applemusic", "url": "#!" },
+      { "name": "amazonmusic", "url": "#!" },
+      { "name": "bandcamp", "url": "#!" }
+    ]
+  },
+  "credits": {
+    "name": "credits",
+    "copy": "code by",
+    "url": "#!"
+  },
+  "masthead": {
+    "logo": {
+      "image": "/assets/img/navbar-logo.svg",
+      "height": "80px"
+    },
+    "title": "It's Nice To Meet You",
+    "subtitle": "Welcome!",
+    "bgImage": "/assets/img/masthead/header-bg.jpg",
+    "vertAlignment": ""
+  },
+  "videos": {
+    "title": "Videos",
+    "subtitle": "Tempor orci eu lobortis elementum nibh tellus.",
+    "videos": [
+      {
+        "title": "Highway Tune",
+        "subtitle": "Official Video",
+        "id": "aJg4OJxp-co",
+        "date": "2017-03-31T00:00:00.000Z"
+      },
+      {
+        "title": "Safari Song",
+        "subtitle": "Live in Toronto / 2018",
+        "id": "PJXizasWnIo",
+        "date": "2017-05-25T00:00:00.000Z"
+      },
+      {
+        "title": "Heat Above",
+        "subtitle": "Official Video",
+        "id": "vrWFu5k1Jpg",
+        "date": "2021-02-18T00:00:00.000Z"
+      },
+      {
+        "title": "Age of Machine",
+        "subtitle": "Official Live",
+        "id": "t6I84TgnqHU",
+        "date": "2018-09-13T00:00:00.000Z"
+      },
+      {
+        "title": "Black Smoke Rising",
+        "subtitle": "Live on SNL",
+        "id": "DqjeLipYpsw",
+        "date": "2017-11-10T00:00:00.000Z"
+      }
+    ]
+  },
+  "releases": {
+    "title": "Music",
+    "subtitle": "In massa tempor nec feugiat nisl pretium.",
+    "releases": [
+      {
+        "title": "All things New",
+        "subtitle": "All Lorem ipsum dolor sit amet consectetur.",
+        "date": "2010-05-06",
+        "image": "/assets/img/releases/1.jpg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!",
+        "format": "CD",
+        "label": "Record Label",
+        "streaming": [
+          { "name": "bandcamp", "url": "#!" },
+          { "name": "spotify", "url": "#!" },
+          { "name": "apple", "url": "#!" }
+        ]
+      },
+      {
+        "title": "Renegade Waves",
+        "subtitle": "Lorem ipsum dolor sit amet consectetur.",
+        "date": "2013-06-16",
+        "image": "/assets/img/releases/2.jpg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!",
+        "format": "CD",
+        "label": "Record Label",
+        "streaming": [
+          { "name": "bandcamp", "url": "#!" },
+          { "name": "spotify", "url": "#!" },
+          { "name": "apple", "url": "#!" }
+        ]
+      },
+      {
+        "title": "Jungle - The Hits",
+        "subtitle": "Lorem ipsum dolor sit amet consectetur.",
+        "date": "2015-01-22",
+        "image": "/assets/img/releases/3.jpg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!",
+        "format": "CD",
+        "label": "Record Label",
+        "streaming": [
+          { "name": "bandcamp", "url": "#!" },
+          { "name": "spotify", "url": "#!" },
+          { "name": "apple", "url": "#!" }
+        ]
+      },
+      {
+        "title": "The Alternative",
+        "subtitle": "Lorem ipsum dolor sit amet consectetur.",
+        "date": "2020-05-06",
+        "image": "/assets/img/releases/4.jpg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!",
+        "format": "CD",
+        "label": "Record Label",
+        "streaming": [
+          { "name": "bandcamp", "url": "#!" },
+          { "name": "spotify", "url": "#!" },
+          { "name": "apple", "url": "#!" }
+        ]
+      }
+    ]
+  },
+  "musicians": {
+    "title": "Musicians",
+    "subtitle": "Quam elementum pulvinar etiam non quam lacus.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.",
+    "musicians": [
+      {
+        "name": "Kay Garland",
+        "instrument": "Vocals / Guitar",
+        "image": "/assets/img/musicians/1.jpg",
+        "description": "Sapiente voluptatem delectus nisi fuga vero ratione impedit minus perspiciatis quas vitae nulla, aliquam commodi aspernatur eos esse animi hic blanditiis iusto excepturi tenetur possimus. Saepe id asperiores esse doloremque voluptatem laudantium architecto nesciunt cum! At reprehenderit explicabo ut, adipisci fuga unde! Nihil omnis fugit ratione ut sit et dolores soluta inventore perferendis, natus nostrum dicta aut! Sed maxime doloribus numquam eaque culpa aperiam sequi molestiae molestias facere. Culpa reprehenderit ea, enim inventore libero in dolorum praesentium, expedita pariatur nobis cumque? Aut, libero tenetur!",
+        "social": [
+          { "name": "instagram", "url": "#!" },
+          { "name": "twitter", "url": "#!" },
+          { "name": "facebook", "url": "#!" }
+        ]
+      },
+      {
+        "name": "Larry Parker",
+        "instrument": "Bass",
+        "image": "/assets/img/musicians/2.jpg",
+        "description": "Sapiente voluptatem delectus nisi fuga vero ratione impedit minus perspiciatis quas vitae nulla, aliquam commodi aspernatur eos esse animi hic blanditiis iusto excepturi tenetur possimus. Saepe id asperiores esse doloremque voluptatem laudantium architecto nesciunt cum! At reprehenderit explicabo ut, adipisci fuga unde! Nihil omnis fugit ratione ut sit et dolores soluta inventore perferendis, natus nostrum dicta aut! Sed maxime doloribus numquam eaque culpa aperiam sequi molestiae molestias facere. Culpa reprehenderit ea, enim inventore libero in dolorum praesentium, expedita pariatur nobis cumque? Aut, libero tenetur!",
+        "social": [
+          { "name": "instagram", "url": "#!" },
+          { "name": "twitter", "url": "#!" },
+          { "name": "facebook", "url": "#!" }
+        ]
+      },
+      {
+        "name": "Diana Petersen",
+        "instrument": "Drums",
+        "image": "/assets/img/musicians/3.jpg",
+        "description": "Sapiente voluptatem delectus nisi fuga vero ratione impedit minus perspiciatis quas vitae nulla, aliquam commodi aspernatur eos esse animi hic blanditiis iusto excepturi tenetur possimus. Saepe id asperiores esse doloremque voluptatem laudantium architecto nesciunt cum! At reprehenderit explicabo ut, adipisci fuga unde! Nihil omnis fugit ratione ut sit et dolores soluta inventore perferendis, natus nostrum dicta aut! Sed maxime doloribus numquam eaque culpa aperiam sequi molestiae molestias facere. Culpa reprehenderit ea, enim inventore libero in dolorum praesentium, expedita pariatur nobis cumque? Aut, libero tenetur!",
+        "social": [
+          { "name": "instagram", "url": "#!" },
+          { "name": "twitter", "url": "#!" },
+          { "name": "facebook", "url": "#!" }
+        ]
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Gallery",
+    "images": [
+      {
+        "url": "/assets/img/gallery/1028.jpg",
+        "label": "Kota Garut, Indonesia"
+      },
+      {
+        "url": "/assets/img/gallery/1033.jpg",
+        "label": "Zurich Airport, Zürich-Flughafen, Switzerland"
+      },
+      {
+        "url": "/assets/img/gallery/1039.jpg",
+        "label": "Park relaxing time"
+      },
+      {
+        "url": "/assets/img/gallery/103.jpg",
+        "label": "Park relaxing time. Active Oval Loop, Atlanta, GA 30309, USA, United States"
+      },
+      {
+        "url": "/assets/img/gallery/1047.jpg",
+        "label": "An Alleyway in Seattle, Washington."
+      },
+      {
+        "url": "/assets/img/gallery/1048.jpg",
+        "label": "Office buildings under clouds"
+      },
+      {
+        "url": "/assets/img/gallery/1065.jpg",
+        "label": "Bastia, Corse, France"
+      },
+      {
+        "url": "/assets/img/gallery/1073.jpg",
+        "label": "FIKA Cafe, Toronto, Canada"
+      },
+      { "url": "/assets/img/gallery/110.jpg", "label": "Evening in a pasture" },
+      {
+        "url": "/assets/img/gallery/116.jpg",
+        "label": "A beautiful farmhouse in Toscana. Featured in Gladiator movie"
+      },
+      {
+        "url": "/assets/img/gallery/142.jpg",
+        "label": "External view of Chateau de Chambord in France."
+      },
+      {
+        "url": "/assets/img/gallery/155.jpg",
+        "label": "Railroad tracks by the beach"
+      }
+    ]
+  },
+  "bio": {
+    "title": "Bio",
+    "subtitle": "Aliquet nibh praesent tristique magna sit.",
+    "bios": [
+      {
+        "title": "2009-2011",
+        "subtitle": "Our Humble Beginnings",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!",
+        "image": "/assets/img/bio/883.jpg",
+        "date": "2009-05-06"
+      },
+      {
+        "title": "March 2011",
+        "subtitle": "A Band is Born",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!",
+        "image": "/assets/img/bio/453.jpg",
+        "date": "2011-05-06"
+      },
+      {
+        "title": "December 2012",
+        "subtitle": "On the Road",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!",
+        "image": "/assets/img/bio/452.jpg",
+        "date": "2012-05-06"
+      },
+      {
+        "title": "July 2014",
+        "subtitle": "Into the Studio",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!",
+        "image": "/assets/img/bio/304.jpg",
+        "date": "2014-05-06"
+      },
+      {
+        "title": "Be Part\nOf Our\nStory!",
+        "subtitle": "Our Humble Beginnings",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!",
+        "image": "/assets/img/bio/883.jpg",
+        "date": "2015-05-06"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Est sit amet facilisis magna etiam. ",
+    "description": "Hendrerit dolor magna eget est lorem. Non arcu risus quis varius quam quisque id diam vel. Imperdiet dui accumsan sit amet. Volutpat sed cras ornare arcu dui vivamus."
+  }
+}
