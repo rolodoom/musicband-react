@@ -1,30 +1,34 @@
 import { useEffect } from "react";
 
-function usePageMetadata({ sitename, description, slogan }) {
-  const pageTitle =
-    sitename && slogan ? `${sitename} - ${slogan}` : "MusicBand";
-
+function usePageMetadata(jsonDB) {
   useEffect(() => {
-    document.title = pageTitle;
-    const metaTags = document.getElementsByTagName("meta");
-    for (let i = 0; i < metaTags.length; i++) {
-      if (metaTags[i].getAttribute("name") === "description") {
-        metaTags[i].setAttribute("content", description);
-      }
-    }
+    if (jsonDB) {
+      const sitename = jsonDB?.band.name || "MusicBand";
+      const description = jsonDB?.band.description || "A musician page theme";
+      const slogan = jsonDB.band?.description || "A musician page theme";
 
-    return () => {
-      document.title = "Default Title";
+      const pageTitle =
+        sitename && slogan ? `${sitename} - ${slogan}` : "MusicBand";
+
+      document.title = pageTitle;
       const metaTags = document.getElementsByTagName("meta");
       for (let i = 0; i < metaTags.length; i++) {
         if (metaTags[i].getAttribute("name") === "description") {
-          metaTags[i].setAttribute("content", "");
+          metaTags[i].setAttribute("content", description);
         }
       }
-    };
-  }, [pageTitle, description]);
 
-  return pageTitle;
+      return () => {
+        document.title = "Default Title";
+        const metaTags = document.getElementsByTagName("meta");
+        for (let i = 0; i < metaTags.length; i++) {
+          if (metaTags[i].getAttribute("name") === "description") {
+            metaTags[i].setAttribute("content", "");
+          }
+        }
+      };
+    }
+  }, [jsonDB]);
 }
 
 export default usePageMetadata;
