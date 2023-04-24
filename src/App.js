@@ -1,4 +1,8 @@
+import { useEffect, useState } from "react";
+
 import usePageMetadata from "./shared/util/usePageMetadata";
+
+import Message from "./shared/components/UIElements/Message";
 
 import Navigation from "./places/sections/Navigation";
 import Masthead from "./places/sections/Masthead";
@@ -12,59 +16,74 @@ import Footer from "./places/sections/Footer";
 
 import "./scss/styles.scss";
 
-import DB from "./dev-data/database.json";
-
-const releaseDataObj = {
-  ...DB.releases,
-  streaming: DB.band.streaming,
-};
-
-const contactDataObj = {
-  ...DB.contact,
-  press: DB.band.press,
-  social: DB.band.social,
-};
-
-const footerDataObj = {
-  bandName: DB.band.name,
-  credits: DB.credits,
-};
-
-const navigationDataObj = {
-  bandName: DB.band.name || "MusicBand",
-  logo: DB.band.logo || "/assets/img/navbar-logo.svg",
-  items: {
-    videos: DB.videos.title || "Videos",
-    releases: DB.releases.title || "Releases",
-    bio: DB.bio.title || "Biography",
-    musicians: DB.musicians.title || "Musicians",
-    gallery: DB.gallery.title || "Gallery",
-    contact: DB.contact.title || "Contact",
-  },
-};
-
-console.log(navigationDataObj);
-
 function App() {
-  usePageMetadata({
-    sitename: DB.band.name || "MusicBand",
-    description: DB.band.description || "A musician page theme",
-    slogan: DB.band.description || "A musician page theme",
-  });
+  const [jsonDB, setJsonDB] = useState(null);
+  const [errorMessage, setErrorMessage] = useState(null);
+
+  const dbURL = process.env.REACT_APP_DATABASE_URL;
+
+  // Load JSON file
+  useEffect(() => {
+    fetch(dbURL)
+      .then((response) => response.json())
+      .then((data) => setJsonDB(data))
+      .catch((error) => {
+        setErrorMessage(`Error loading data from server.`);
+      });
+  }, [dbURL]);
+
+  // Change page metadata
+  usePageMetadata(jsonDB);
+
+  // Extract the relevant portions of the data into separate variables or objects
+  const releaseDataObj = {
+    ...jsonDB?.releases,
+    streaming: jsonDB?.band.streaming,
+  };
+
+  const contactDataObj = {
+    ...jsonDB?.contact,
+    press: jsonDB?.band.press,
+    social: jsonDB?.band.social,
+  };
+
+  const footerDataObj = {
+    bandName: jsonDB?.band.name,
+    credits: jsonDB?.credits,
+  };
+
+  const navigationDataObj = {
+    bandName: jsonDB?.band.name || "MusicBand",
+    logo: jsonDB?.band.logo || "/assets/img/navbar-logo.svg",
+    items: {
+      videos: jsonDB?.videos.title || "Videos",
+      releases: jsonDB?.releases.title || "Releases",
+      bio: jsonDB?.bio.title || "Biography",
+      musicians: jsonDB?.musicians.title || "Musicians",
+      gallery: jsonDB?.gallery.title || "Gallery",
+      contact: jsonDB?.contact.title || "Contact",
+    },
+  };
 
   return (
     <div className="App">
-      <div id="page-top">
-        <Navigation data={navigationDataObj} />
-        <Masthead data={DB.masthead} />
-        <Videos data={DB.videos} />
-        <Releases data={releaseDataObj} />
-        <Bio data={DB.bio} />
-        <Musicians data={DB.musicians} />
-        <Gallery data={DB.gallery} />
-        <Contact data={contactDataObj} />
-        <Footer data={footerDataObj} />
-      </div>
+      {jsonDB ? (
+        <div id="page-top">
+          <Navigation data={navigationDataObj} />
+          <Masthead data={jsonDB.masthead} />
+          <Videos data={jsonDB.videos} />
+          <Releases data={releaseDataObj} />
+          <Bio data={jsonDB.bio} />
+          <Musicians data={jsonDB.musicians} />
+          <Gallery data={jsonDB.gallery} />
+          <Contact data={contactDataObj} />
+          <Footer data={footerDataObj} />
+        </div>
+      ) : errorMessage ? (
+        <Message>{errorMessage}</Message>
+      ) : (
+        <Message>Loading data...</Message>
+      )}
     </div>
   );
 }
