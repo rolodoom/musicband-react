@@ -1,3 +1,5 @@
+/* global bootstrap */
+
 import { useEffect, useState } from "react";
 
 import usePageMetadata from "./shared/util/usePageMetadata";
@@ -15,6 +17,7 @@ import Contact from "./places/sections/Contact";
 import Footer from "./places/sections/Footer";
 
 import "./scss/styles.scss";
+import "./places/script";
 
 function App() {
   const [jsonDB, setJsonDB] = useState(null);
@@ -38,6 +41,9 @@ function App() {
           }
           const jsonDB = await response.json();
           setJsonDB(jsonDB);
+
+          // Call the function to initialize the scrollspy after the data has been loaded
+          initializeScrollSpy();
         }
       } catch (error) {
         setErrorMessage(`Error loading data: ${error.message}`);
@@ -46,6 +52,17 @@ function App() {
 
     fetchJsonData();
   }, [dbURL]);
+
+  // Function to initialize the scrollspy
+  function initializeScrollSpy() {
+    const mainNav = document.body.querySelector("#mainNav");
+    if (mainNav) {
+      new bootstrap.ScrollSpy(document.body, {
+        target: "#mainNav",
+        offset: 74,
+      });
+    }
+  }
 
   // Change page metadata
   usePageMetadata(jsonDB);
