@@ -6,7 +6,17 @@ import ReleaseModal from "../components/ReleaseModal";
 
 import { getSortedItems } from "../../shared/util/filter";
 
-function Releases({ data: { releases, streaming, title, subtitle } }) {
+import { getInlineSectionStyles } from "../../shared/util/format";
+
+function Releases({
+  data: { releases, streaming, title, subtitle, bgImage, colors, className },
+}) {
+  // Inline section colors
+  const styles = getInlineSectionStyles(colors, bgImage);
+  const classes = `portfolio page-section section-dark ${
+    className ? className : ""
+  }`;
+
   const sortedReleases = getSortedItems([...releases]);
 
   const commonClasses = "col-sm-6 mb-4";
@@ -15,7 +25,7 @@ function Releases({ data: { releases, streaming, title, subtitle } }) {
   }`;
 
   return (
-    <section className="portfolio page-section section-dark" id="releases">
+    <section className={classes} style={styles} id="releases">
       <div className="container">
         <div className="text-center">
           <h2 className="section-heading text-uppercase">{title || "Music"}</h2>
