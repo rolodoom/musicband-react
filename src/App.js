@@ -41,10 +41,11 @@ function App() {
           }
           const jsonDB = await response.json();
           setJsonDB(jsonDB);
-
-          // Call the function to initialize the scrollspy after the data has been loaded
-          initializeScrollSpy();
         }
+        // Activate Bootstrap scrollspy on the main nav element
+        // Call the function to initialize the scrollspy after the data has been loaded
+        const navigationElement = document.body.querySelector("#mainNav");
+        initializeScrollSpy(navigationElement);
       } catch (error) {
         setErrorMessage(`Error loading data: ${error.message}`);
       }
@@ -54,9 +55,8 @@ function App() {
   }, [dbURL]);
 
   // Function to initialize the scrollspy
-  function initializeScrollSpy() {
-    const mainNav = document.body.querySelector("#mainNav");
-    if (mainNav) {
+  function initializeScrollSpy(navigationElement) {
+    if (navigationElement) {
       new bootstrap.ScrollSpy(document.body, {
         target: "#mainNav",
         offset: 74,
