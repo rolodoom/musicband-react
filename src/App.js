@@ -24,12 +24,27 @@ function App() {
 
   // Load JSON file
   useEffect(() => {
-    fetch(dbURL)
-      .then((response) => response.json())
-      .then((data) => setJsonDB(data))
-      .catch((error) => {
-        setErrorMessage(`Error loading data from server.`);
-      });
+    async function fetchJsonData() {
+      try {
+        if (!dbURL) {
+          // Load JSON data from the local file in development mode
+          const jsonDB = require("./dev-data/database.json");
+          setJsonDB(jsonDB);
+        } else {
+          // Load JSON data from the server in production mode
+          const response = await fetch(dbURL);
+          if (!response.ok) {
+            throw new Error("Failed to fetch JSON data from server");
+          }
+          const jsonDB = await response.json();
+          setJsonDB(jsonDB);
+        }
+      } catch (error) {
+        setErrorMessage(`Error loading data: ${error.message}`);
+      }
+    }
+
+    fetchJsonData();
   }, [dbURL]);
 
   // Change page metadata
