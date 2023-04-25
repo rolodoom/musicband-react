@@ -40,7 +40,11 @@ const ReleaseModal = ({ release }) => {
                       />
                     </div>
                     <div className="col-md-6">
-                      <p>{release.description}</p>
+                      <p
+                        dangerouslySetInnerHTML={{
+                          __html: release.description.replace(/\n/g, "<br>"),
+                        }}
+                      ></p>
                       <ul className="list-inline">
                         <li>
                           <strong>Release Date:</strong> {formattedDate}
