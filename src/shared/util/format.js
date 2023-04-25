@@ -25,8 +25,8 @@ export const formatDate = (dateString) => {
   const options = { year: "numeric", month: "long", day: "numeric" };
 
   // Use the toLocaleDateString method to format the date string according to the specified options
-  // The "en-US" argument specifies the locale (American English)
-  const formattedDate = date.toLocaleDateString("en-US", options);
+  const userLocale = navigator.language;
+  const formattedDate = date.toLocaleDateString(userLocale, options);
 
   // Return the formatted date string
   return formattedDate;
@@ -118,7 +118,7 @@ export const formatStringWithBreaks = (inputString) => {
  * @param {number} [alpha=1] - The alpha value for the RGBA color (0-1).
  * @returns {string} The RGBA color string.
  */
-export const hexToRgba = (hex, alpha = 0.5) => {
+export const hexToRgba = (hex, alpha = 1) => {
   // Parse the red, green, and blue values from the HEX string.
   const r = parseInt(hex.substring(1, 3), 16);
   const g = parseInt(hex.substring(3, 5), 16);
@@ -141,20 +141,30 @@ export const getInlineSectionStyles = (
   bgImage,
   vertAlignment = null
 ) => {
-  // Return null if bgImage is not passed
-  if (!bgImage) {
-    return null;
-  }
+  // // Return null if bgImage is not passed
+  // if (!bgImage) {
+  //   return null;
+  // }
 
-  // const alpha = colors?.alpha || 0.6;
-  const bgcolor = hexToRgba(colors?.bgColor || "#111111", colors?.alpha || 0.5);
-  const styles = {
-    backgroundImage: `linear-gradient(${bgcolor}, ${bgcolor}), url(${bgImage})`,
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "center",
-    backgroundAttachment: "fixed",
-    backgroundSize: "cover",
-  };
+  const styles = {};
+
+  if (!bgImage) {
+    if (colors?.bgColor) {
+      const bgcolor = hexToRgba(
+        colors?.bgColor || "#FFFFFF",
+        colors?.alpha || 1
+      );
+
+      styles.backgroundColor = `${bgcolor}`;
+    }
+  } else {
+    const bgcolor = hexToRgba(colors?.bgColor || "#FFFFFF", colors?.alpha || 0);
+    styles.backgroundImage = `linear-gradient(${bgcolor}, ${bgcolor}), url(${bgImage})`;
+    styles.backgroundRepeat = "no-repeat";
+    styles.backgroundPosition = "center";
+    styles.backgroundAttachment = "fixed";
+    styles.backgroundSize = "cover";
+  }
 
   if (vertAlignment) {
     styles.alignItems = vertAlignment;
