@@ -19,7 +19,7 @@ function Musicians({
 
   return (
     <section
-      className="page-section bg-dark section-dark"
+      className="page-section section-dark"
       id="musicians"
       style={styles}
     >
