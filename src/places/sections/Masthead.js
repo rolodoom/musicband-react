@@ -2,11 +2,13 @@ import React from "react";
 
 import Button from "../../shared/components/FormElements/Button";
 
-function Masthead({ data: { bgImage, vertAlignment, subtitle, title, logo } }) {
-  const styles = {
-    backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('${bgImage}')`,
-    alignItems: vertAlignment || "center",
-  };
+import { getInlineSectionStyles } from "../../shared/util/format";
+
+function Masthead({
+  data: { bgImage, colors, vertAlignment, subtitle, title, logo },
+}) {
+  // Inline section colors
+  const styles = getInlineSectionStyles(colors, bgImage, vertAlignment);
 
   const logoStyles = {
     maxWidth: "320px",

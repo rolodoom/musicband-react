@@ -7,12 +7,20 @@ import {
   getSortedItemsWithoutLatest,
 } from "../../shared/util/filter";
 
-function Videos({ data: { videos, title, subtitle } }) {
+import { getInlineSectionStyles } from "../../shared/util/format";
+
+function Videos({
+  data: { videos, title, subtitle, bgImage, colors, className },
+}) {
+  // Inline section colors
+  const styles = getInlineSectionStyles(colors, bgImage);
+  const classes = `videos page-section ${className ? className : ""}`;
+
   const sortedVideos = getSortedItemsWithoutLatest([...videos]);
   const latestVideo = getLatestItem(videos);
 
   return (
-    <section className="videos page-section" id="videos">
+    <section className={classes} id="videos" style={styles}>
       <div className="container">
         <div className="text-center">
           <h2 className="section-heading text-uppercase">

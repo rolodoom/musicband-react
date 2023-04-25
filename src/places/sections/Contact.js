@@ -6,13 +6,20 @@ import {
   getFileExtension,
   getIconId,
   toTitleCase,
+  getInlineSectionStyles,
 } from "../../shared/util/format";
 
-function Contact({ data: { title, subtitle, press, social } }) {
+function Contact({
+  data: { title, subtitle, description, bgImage, colors, press, social },
+}) {
+  // Inline section colors
+  const styles = getInlineSectionStyles(colors, bgImage);
+
   const showPDFs = press.length > 0;
   const showSocial = social.length > 0;
+
   return (
-    <section className="page-section section-dark" id="contact">
+    <section className="page-section section-dark" id="contact" style={styles}>
       <div className="container">
         <div className="text-center">
           <h2 className="section-heading text-uppercase">

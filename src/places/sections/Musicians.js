@@ -4,14 +4,25 @@ import { v4 as uuidv4 } from "uuid";
 import MusicianItem from "../components/MusicianItem";
 import MusicianModal from "../components/MusicianModal";
 
-function Musicians({ data: { musicians, title, subtitle, description } }) {
+import { getInlineSectionStyles } from "../../shared/util/format";
+
+function Musicians({
+  data: { musicians, title, subtitle, description, colors, bgImage },
+}) {
+  // Inline section colors
+  const styles = getInlineSectionStyles(colors, bgImage);
+
   const commonClasses = "";
   const columnClasses = `${commonClasses} ${
     musicians.length > 3 ? "col-lg-3" : "col-lg-4"
   }`;
 
   return (
-    <section className="page-section bg-dark section-dark" id="musicians">
+    <section
+      className="page-section bg-dark section-dark"
+      id="musicians"
+      style={styles}
+    >
       <div className="container">
         <div className="text-center">
           <h2 className="section-heading text-uppercase">

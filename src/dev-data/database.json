@@ -35,7 +35,10 @@
     "title": "It's Nice To Meet You",
     "subtitle": "Welcome!",
     "bgImage": "/assets/img/masthead/header-bg.jpg",
-    "vertAlignment": ""
+    "colors": {
+      "bgColor": "#01161e",
+      "alpha": "0.5"
+    }
   },
   "videos": {
     "title": "Videos",
@@ -269,6 +272,11 @@
   "contact": {
     "title": "Contact",
     "subtitle": "Est sit amet facilisis magna etiam. ",
-    "description": "Hendrerit dolor magna eget est lorem. Non arcu risus quis varius quam quisque id diam vel. Imperdiet dui accumsan sit amet. Volutpat sed cras ornare arcu dui vivamus."
+    "description": "Hendrerit dolor magna eget est lorem. Non arcu risus quis varius quam quisque id diam vel. Imperdiet dui accumsan sit amet. Volutpat sed cras ornare arcu dui vivamus.",
+    "bgImage": "/assets/img/bg-contact.jpg",
+    "colors": {
+      "bgColor": "#01161e",
+      "alpha": "0.6"
+    }
   }
 }

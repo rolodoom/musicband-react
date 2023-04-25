@@ -15,10 +15,7 @@ function Releases({ data: { releases, streaming, title, subtitle } }) {
   }`;
 
   return (
-    <section
-      className="portfolio page-section bg-dark section-dark"
-      id="releases"
-    >
+    <section className="portfolio page-section section-dark" id="releases">
       <div className="container">
         <div className="text-center">
           <h2 className="section-heading text-uppercase">{title || "Music"}</h2>
