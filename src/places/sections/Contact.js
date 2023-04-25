@@ -10,7 +10,7 @@ import {
 } from "../../shared/util/format";
 
 function Contact({
-  data: { title, subtitle, description, bgImage, colors, press, social },
+  data: { title, subtitle, bgImage, colors, press, social },
 }) {
   // Inline section colors
   const styles = getInlineSectionStyles(colors, bgImage);
