@@ -110,3 +110,56 @@ export const formatStringWithBreaks = (inputString) => {
 
   return outputString;
 };
+
+/**
+ * Convert a HEX color string to an RGBA color string.
+ *
+ * @param {string} hex - The HEX color string to convert.
+ * @param {number} [alpha=1] - The alpha value for the RGBA color (0-1).
+ * @returns {string} The RGBA color string.
+ */
+export const hexToRgba = (hex, alpha = 0.5) => {
+  // Parse the red, green, and blue values from the HEX string.
+  const r = parseInt(hex.substring(1, 3), 16);
+  const g = parseInt(hex.substring(3, 5), 16);
+  const b = parseInt(hex.substring(5, 7), 16);
+
+  // Return the RGBA color string with the provided alpha value.
+  return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+};
+
+/**
+ * Returns the inline styles for a section with a background color and image
+ * @param {Object} colors - Object containing the background color and alpha values
+ * @param {string} colors.bgColor - Background color in hex format
+ * @param {string} colors.alpha - Alpha value for the background color
+ * @param {string} bgImage - URL of the background image
+ * @returns {Object|null} - Object containing the inline styles for the section or null if colors or bgImage are not passed
+ */
+export const getInlineSectionStyles = (
+  colors,
+  bgImage,
+  vertAlignment = null
+) => {
+  // Return null if bgImage is not passed
+  if (!bgImage) {
+    return null;
+  }
+
+  // const alpha = colors?.alpha || 0.6;
+  const bgcolor = hexToRgba(colors?.bgColor || "#111111", colors?.alpha || 0.5);
+  console.log(bgcolor);
+  const styles = {
+    backgroundImage: `linear-gradient(${bgcolor}, ${bgcolor}), url(${bgImage})`,
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center",
+    backgroundAttachment: "fixed",
+    backgroundSize: "cover",
+  };
+
+  if (vertAlignment) {
+    styles.alignItems = vertAlignment;
+  }
+
+  return styles;
+};
