@@ -24,7 +24,6 @@ const BioItem = ({ bio, isOdd, isLast }) => {
           </div>
           <div className="timeline-body">
             <p
-              className="text-muted"
               dangerouslySetInnerHTML={{
                 __html: formatStringWithBreaks(bio.description),
               }}
