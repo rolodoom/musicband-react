@@ -35,7 +35,9 @@ function Contact({
                 const icon = getIconId(extension);
                 return (
                   <Button
-                    className={`btn-${file.color || "primary"} btn-xl mx-2`}
+                    className={`btn-${
+                      file.color || "primary"
+                    } btn-xl mx-2 mb-3`}
                     href={file.url}
                     key={uuidv4()}
                   >
@@ -54,7 +56,7 @@ function Contact({
               {social.map((social) => {
                 return (
                   <Button
-                    className="btn-dark btn-social-contact mx-2"
+                    className="btn-dark btn-social-contact mx-2 mb-2"
                     href={social.url}
                     key={uuidv4()}
                   >
