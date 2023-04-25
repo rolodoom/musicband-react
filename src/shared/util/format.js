@@ -148,7 +148,6 @@ export const getInlineSectionStyles = (
 
   // const alpha = colors?.alpha || 0.6;
   const bgcolor = hexToRgba(colors?.bgColor || "#111111", colors?.alpha || 0.5);
-  console.log(bgcolor);
   const styles = {
     backgroundImage: `linear-gradient(${bgcolor}, ${bgcolor}), url(${bgImage})`,
     backgroundRepeat: "no-repeat",
