@@ -15,22 +15,33 @@ function Masthead({
     height: logo?.height || "60px",
   };
 
+  let contentToRender = "";
+
+  if (logo) {
+    // Do something if there is a logo
+    contentToRender = (
+      <div className="masthead-heading text-uppercase">
+        <img
+          src={logo.image}
+          alt={`${logo.alt || "Logo"}`}
+          style={logoStyles}
+        />
+      </div>
+    );
+  } else if (title && subtitle) {
+    // Ask if there is no logo and both title and subtitle are present
+    contentToRender = (
+      <div>
+        <div className="masthead-subheading">{subtitle}</div>
+        <div className="masthead-heading text-uppercase">{title}</div>
+      </div>
+    );
+  }
+
   return (
     <header className="masthead" style={styles}>
       <div className="container">
-        {!logo && (
-          <div className="masthead-subheading">{subtitle || "Welcome!"}</div>
-        )}
-        <div className="masthead-heading text-uppercase">
-          {!logo && (title || "It's Nice To Meet You")}
-          {logo && (
-            <img
-              src={logo.image}
-              alt={`${logo.alt || "Logo"}`}
-              style={logoStyles}
-            />
-          )}
-        </div>
+        {contentToRender}
         <Button className="btn-primary btn-xl text-uppercase" href="#videos">
           <i className="fas fa-angle-double-down"></i> Continue{" "}
           <i className="fas fa-angle-double-down"></i>
