@@ -4,8 +4,6 @@ import React, { useEffect, useState } from "react";
 
 import usePageMetadata from "./shared/util/usePageMetadata";
 
-import Message from "./shared/components/UIElements/Message";
-
 import Navigation from "./places/sections/Navigation";
 import Masthead from "./places/sections/Masthead";
 import Videos from "./places/sections/Videos";
@@ -123,23 +121,17 @@ function App() {
 
   return (
     <div className="App">
-      {jsonDB ? (
-        <div id="page-top">
-          <Navigation data={navigationDataObj} />
-          <Masthead data={jsonDB.masthead} />
-          <Videos data={jsonDB.videos} />
-          <Releases data={releaseDataObj} />
-          <Bio data={jsonDB.bio} />
-          <Musicians data={jsonDB.musicians} />
-          <Gallery data={jsonDB.gallery} />
-          <Contact data={contactDataObj} />
-          <Footer data={footerDataObj} />
-        </div>
-      ) : errorMessage ? (
-        <Message>{errorMessage}</Message>
-      ) : (
-        <Message>Loading data...</Message>
-      )}
+      <div id="page-top">
+        <Navigation data={navigationDataObj} />
+        <Masthead data={jsonDB.masthead} />
+        <Videos data={jsonDB.videos} />
+        <Releases data={releaseDataObj} />
+        <Bio data={jsonDB.bio} />
+        <Musicians data={jsonDB.musicians} />
+        <Gallery data={jsonDB.gallery} />
+        <Contact data={contactDataObj} />
+        <Footer data={footerDataObj} />
+      </div>
     </div>
   );
 }
