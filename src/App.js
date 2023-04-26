@@ -1,10 +1,4 @@
-/* global bootstrap */
-
-import { useEffect, useState } from "react";
-
 import usePageMetadata from "./shared/util/usePageMetadata";
-
-import Message from "./shared/components/UIElements/Message";
 
 import Navigation from "./places/sections/Navigation";
 import Masthead from "./places/sections/Masthead";
@@ -17,53 +11,10 @@ import Contact from "./places/sections/Contact";
 import Footer from "./places/sections/Footer";
 
 import "./scss/styles.scss";
-import "./places/script";
+
+const jsonDB = require("./dev-data/database.json");
 
 function App() {
-  const [jsonDB, setJsonDB] = useState(null);
-  const [errorMessage, setErrorMessage] = useState(null);
-
-  const dbURL = process.env.REACT_APP_DATABASE_URL;
-
-  // Load JSON file
-  useEffect(() => {
-    async function fetchJsonData() {
-      try {
-        if (!dbURL) {
-          // Load JSON data from the local file in development mode
-          const jsonDB = require("./dev-data/database.json");
-          setJsonDB(jsonDB);
-        } else {
-          // Load JSON data from the server in production mode
-          const response = await fetch(dbURL);
-          if (!response.ok) {
-            throw new Error("Failed to fetch JSON data from server");
-          }
-          const jsonDB = await response.json();
-          setJsonDB(jsonDB);
-        }
-        // Activate Bootstrap scrollspy on the main nav element
-        // Call the function to initialize the scrollspy after the data has been loaded
-        const navigationElement = document.body.querySelector("#mainNav");
-        initializeScrollSpy(navigationElement);
-      } catch (error) {
-        setErrorMessage(`Error loading data: ${error.message}`);
-      }
-    }
-
-    fetchJsonData();
-  }, [dbURL]);
-
-  // Function to initialize the scrollspy
-  function initializeScrollSpy(navigationElement) {
-    if (navigationElement) {
-      new bootstrap.ScrollSpy(document.body, {
-        target: "#mainNav",
-        offset: 74,
-      });
-    }
-  }
-
   // Change page metadata
   usePageMetadata(jsonDB);
 
@@ -99,23 +50,17 @@ function App() {
 
   return (
     <div className="App">
-      {jsonDB ? (
-        <div id="page-top">
-          <Navigation data={navigationDataObj} />
-          <Masthead data={jsonDB.masthead} />
-          <Videos data={jsonDB.videos} />
-          <Releases data={releaseDataObj} />
-          <Bio data={jsonDB.bio} />
-          <Musicians data={jsonDB.musicians} />
-          <Gallery data={jsonDB.gallery} />
-          <Contact data={contactDataObj} />
-          <Footer data={footerDataObj} />
-        </div>
-      ) : errorMessage ? (
-        <Message>{errorMessage}</Message>
-      ) : (
-        <Message>Loading data...</Message>
-      )}
+      <div id="page-top">
+        <Navigation data={navigationDataObj} />
+        <Masthead data={jsonDB.masthead} />
+        <Videos data={jsonDB.videos} />
+        <Releases data={releaseDataObj} />
+        <Bio data={jsonDB.bio} />
+        <Musicians data={jsonDB.musicians} />
+        <Gallery data={jsonDB.gallery} />
+        <Contact data={contactDataObj} />
+        <Footer data={footerDataObj} />
+      </div>
     </div>
   );
 }

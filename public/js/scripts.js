@@ -1,5 +1,9 @@
 /*global bootstrap*/
-
+/*!
+ * Start Bootstrap - MusicBand v1.0.0 (undefined)
+ * Copyright 2013-2023 rolodoom
+ * Licensed under MIT (https://github.com/StartBootstrap/musicband/blob/master/LICENSE)
+ */
 //
 // Scripts
 //

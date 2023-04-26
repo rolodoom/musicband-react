@@ -1,7 +1,0 @@
-[build]
-  command = "REACT_APP_DATABASE_URL=$DATABASE_URL npm run build"
-
-[[redirects]]
-  from = "/*"
-  to = "/"
-  status = 200
