@@ -5,7 +5,7 @@ function usePageMetadata(jsonDB) {
     if (jsonDB) {
       const sitename = jsonDB?.band.name || "MusicBand";
       const description = jsonDB?.band.description || "A musician page theme";
-      const slogan = jsonDB.band?.description || "A musician page theme";
+      const slogan = jsonDB.band?.slogan || "A musician page theme";
 
       const pageTitle =
         sitename && slogan ? `${sitename} - ${slogan}` : "MusicBand";
