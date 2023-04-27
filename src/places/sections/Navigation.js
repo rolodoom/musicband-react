@@ -1,6 +1,21 @@
 import React from "react";
 
-function Navigation({ data: { bandName, logo, items } }) {
+function Navigation({ data }) {
+  const bandName = data.band.name || "MusicBand";
+  const logo = data.band.logo || "/assets/img/navbar-logo.svg";
+  const items = {
+    videos: data.videos.title || "Videos",
+    releases: data.releases.title || "Releases",
+    bio: data.bio.title || "Biography",
+    musicians: data.musicians.title || "Musicians",
+    gallery: data.gallery.title || "Gallery",
+    contact: data.contact.title || "Contact",
+  };
+
+  if (!("releases" in data.releases ?? {})) {
+    delete items.releases;
+  }
+
   return (
     <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div className="container">

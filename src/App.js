@@ -108,24 +108,11 @@ function App() {
     credits: jsonDB?.credits,
   };
 
-  const navigationDataObj = {
-    bandName: jsonDB?.band.name || "MusicBand",
-    logo: jsonDB?.band.logo || "/assets/img/navbar-logo.svg",
-    items: {
-      videos: jsonDB?.videos.title || "Videos",
-      releases: jsonDB?.releases.title || "Releases",
-      bio: jsonDB?.bio.title || "Biography",
-      musicians: jsonDB?.musicians.title || "Musicians",
-      gallery: jsonDB?.gallery.title || "Gallery",
-      contact: jsonDB?.contact.title || "Contact",
-    },
-  };
-
   return (
     <div className="App">
       {jsonDB ? (
         <div id="page-top">
-          <Navigation data={navigationDataObj} />
+          <Navigation data={jsonDB} />
           <Masthead data={jsonDB.masthead} />
           <Videos data={jsonDB.videos} />
           <Releases data={releaseDataObj} />
