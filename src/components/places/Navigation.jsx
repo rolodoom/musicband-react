@@ -10,7 +10,7 @@ function Navigation({ data }) {
     contact: data.contact.title || 'Contact',
   };
 
-  if (!('releases' in data.releases ?? {})) {
+  if (!('releases' in data.releases)) {
     delete items.releases;
   }
 
