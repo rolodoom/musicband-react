@@ -1,9 +1,11 @@
 {
+  "singleQuote": true,
   "overrides": [
     {
       "files": "*.scss",
       "options": {
-        "useTabs": true
+        "useTabs": true,
+        "singleQuote": false
       }
     }
   ]
