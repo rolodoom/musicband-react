@@ -1,6 +1,6 @@
 # MusicBand-React
 
-This is a React implementation of [MusicBand](https://github.com/rolodoom/musicband) one page, musician page theme built with [Bootstrap](https://getbootstrap.com/) and forked from [Agency](https://startbootstrap.com/theme/agency) by [Start Bootstrap](https://startbootstrap.com/).
+This is a React+Vite implementation of [MusicBand](https://github.com/rolodoom/musicband) one page, musician page theme built with [Bootstrap](https://getbootstrap.com/) and forked from [Agency](https://startbootstrap.com/theme/agency) by [Start Bootstrap](https://startbootstrap.com/).
 
 ## Status
 
@@ -12,6 +12,38 @@ This is a React implementation of [MusicBand](https://github.com/rolodoom/musicb
 [![MusicBand Preview](src/screenshots/screenshot.jpg)](https://musicband-react-rolodoom.netlify.app/)
 
 **[View Live Preview](https://musicband-react-rolodoom.netlify.app/)**
+
+## Usage
+
+Clone the source files and navigate into the app's root directory. Run `npm install` and then run `npm run dev` which will open up a preview of the app in your default browser, watch for changes to source files, and live reload the browser when changes are saved. You can view the `package.json` file to see which scripts are included.
+
+## Available Scripts
+
+You must have npm installed in order to use this build environment.
+
+### `npm run dev`
+
+Runs the app in the development mode.\
+Open http://localhost:5173 to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm run build`
+
+Builds the app for production to the `dist`. You may deploy this `dist` folder to any of your preferred platforms.
+
+Your app is ready to be deployed!
+
+### `npm run preview`
+
+Once you've built the app, you may test it locally by running `npm run preview` command.
+
+The `vite preview` command will boot up a local static web server that serves the files from `dist` at http://localhost:4173. It's an easy way to check if the production build looks OK in your local environment.
+
+### More about Deploying a Static Site
+
+See the section about [deployment](https://vitejs.dev/guide/static-deploy) on Vite.js for more information.
 
 ## Bugs and Issues
 
