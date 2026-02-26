@@ -1,5 +1,7 @@
 # MusicBand-React
 
+> ⚠️ This project is **archived**. Development has moved to [MusicBandAstro](https://github.com/rolodoom/musicband-astro), a more maintainable and flexible Astro + Tailwind CSS version of this template.
+
 This is a React+Vite implementation of [MusicBand](https://github.com/rolodoom/musicband) one page, musician page theme built with [Bootstrap](https://getbootstrap.com/) and forked from [Agency](https://startbootstrap.com/theme/agency) by [Start Bootstrap](https://startbootstrap.com/).
 
 ## Status
